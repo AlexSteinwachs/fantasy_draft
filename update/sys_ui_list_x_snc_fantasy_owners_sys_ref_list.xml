@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_snc_fantasy_owners" version="2" view="sys_ref_list">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>owner_name</element>
+            <list_id display_value="x_snc_fantasy_owners" element="NULL" name="x_snc_fantasy_owners" parent="NULL" relationship="NULL" sys_domain="global" view="4ac312cb7b109600a984804b5e4d4da6">7d89c2747be56a0077b1ade93f4d4db7</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>alex</sys_created_by>
+            <sys_created_on>2016-08-27 17:22:02</sys_created_on>
+            <sys_id>b189c2747be56a0077b1ade93f4d4db8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>alex</sys_updated_by>
+            <sys_updated_on>2016-08-27 17:22:02</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_snc_fantasy_owners</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>alex</sys_created_by>
+            <sys_created_on>2016-08-27 17:22:02</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7d89c2747be56a0077b1ade93f4d4db7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_fantasy_owners</sys_name>
+            <sys_package display_value="Fantasy Football Draft Picker" source="x_snc_fantasy">a8bcca207b616a00a984804b5e4d4ddf</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Fantasy Football Draft Picker">a8bcca207b616a00a984804b5e4d4ddf</sys_scope>
+            <sys_update_name>sys_ui_list_x_snc_fantasy_owners_sys_ref_list</sys_update_name>
+            <sys_updated_by>alex</sys_updated_by>
+            <sys_updated_on>2016-08-27 17:22:02</sys_updated_on>
+            <sys_user/>
+            <view display_value="Reference List" name="sys_ref_list">4ac312cb7b109600a984804b5e4d4da6</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

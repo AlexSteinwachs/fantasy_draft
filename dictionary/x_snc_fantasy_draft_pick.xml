@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Draft Pick" max_length="40" name="x_snc_fantasy_draft_pick" sizeclass="6240" type="collection">
+        <element label="Draft" max_length="32" name="draft" reference="x_snc_fantasy_draft" type="reference"/>
+        <element label="Owner" max_length="32" name="owner" reference="x_snc_fantasy_owners" type="reference"/>
+        <element label="Player" max_length="32" name="player" reference="x_snc_fantasy_players" type="reference"/>
+        <index name="index">
+            <element name="owner"/>
+        </index>
+        <index name="index2">
+            <element name="draft"/>
+        </index>
+        <index name="index3">
+            <element name="player"/>
+        </index>
+    </element>
+</database>

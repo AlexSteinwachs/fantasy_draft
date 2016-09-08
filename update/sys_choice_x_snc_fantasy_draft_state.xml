@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="state" table="x_snc_fantasy_draft" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Ready</label>
+            <language>en</language>
+            <name>x_snc_fantasy_draft</name>
+            <sequence>1</sequence>
+            <sys_created_by>alex</sys_created_by>
+            <sys_created_on>2016-08-27 17:04:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>76854eb07be56a0077b1ade93f4d4d33</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>alex</sys_updated_by>
+            <sys_updated_on>2016-08-27 19:02:16</sys_updated_on>
+            <u_emoji/>
+            <value>Ready</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Initializing</label>
+            <language>en</language>
+            <name>x_snc_fantasy_draft</name>
+            <sequence>2</sequence>
+            <sys_created_by>alex</sys_created_by>
+            <sys_created_on>2016-08-27 19:01:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ba502efc7be56a0077b1ade93f4d4d7b</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>alex</sys_updated_by>
+            <sys_updated_on>2016-08-27 19:02:18</sys_updated_on>
+            <u_emoji/>
+            <value>Initializing</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Drafting</label>
+            <language>en</language>
+            <name>x_snc_fantasy_draft</name>
+            <sequence>3</sequence>
+            <sys_created_by>alex</sys_created_by>
+            <sys_created_on>2016-08-27 17:05:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e7854eb07be56a0077b1ade93f4d4d34</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>alex</sys_updated_by>
+            <sys_updated_on>2016-08-27 19:02:21</sys_updated_on>
+            <u_emoji/>
+            <value>Drafting</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Complete</label>
+            <language>en</language>
+            <name>x_snc_fantasy_draft</name>
+            <sequence>4</sequence>
+            <sys_created_by>alex</sys_created_by>
+            <sys_created_on>2016-08-27 17:05:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bca54eb07be56a0077b1ade93f4d4d38</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>alex</sys_updated_by>
+            <sys_updated_on>2016-08-27 19:02:10</sys_updated_on>
+            <u_emoji/>
+            <value>Complete</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <name>x_snc_fantasy_draft</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>alex</sys_created_by>
+            <sys_created_on>2016-08-27 17:04:38</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>3a854eb07be56a0077b1ade93f4d4d33</sys_id>
+            <sys_mod_count>12</sys_mod_count>
+            <sys_name>state</sys_name>
+            <sys_package display_value="Fantasy Football Draft Picker" source="x_snc_fantasy">a8bcca207b616a00a984804b5e4d4ddf</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Fantasy Football Draft Picker">a8bcca207b616a00a984804b5e4d4ddf</sys_scope>
+            <sys_update_name>sys_choice_x_snc_fantasy_draft_state</sys_update_name>
+            <sys_updated_by>alex</sys_updated_by>
+            <sys_updated_on>2016-08-27 19:02:21</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

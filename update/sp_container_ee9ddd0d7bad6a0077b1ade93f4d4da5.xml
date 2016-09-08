@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_container">
+    <sp_container action="INSERT_OR_UPDATE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>Draft - Container 1</name>
+        <order>1</order>
+        <sp_page display_value="ff_draft">4ba3baf47b296a0077b1ade93f4d4dcc</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>alex</sys_created_by>
+        <sys_created_on>2016-08-28 08:48:36</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>ee9ddd0d7bad6a0077b1ade93f4d4da5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Draft - Container 1</sys_name>
+        <sys_package display_value="Fantasy Football Draft Picker" source="x_snc_fantasy">a8bcca207b616a00a984804b5e4d4ddf</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Fantasy Football Draft Picker">a8bcca207b616a00a984804b5e4d4ddf</sys_scope>
+        <sys_update_name>sp_container_ee9ddd0d7bad6a0077b1ade93f4d4da5</sys_update_name>
+        <sys_updated_by>alex</sys_updated_by>
+        <sys_updated_on>2016-08-28 08:48:36</sys_updated_on>
+        <width>container</width>
+    </sp_container>
+</record_update>

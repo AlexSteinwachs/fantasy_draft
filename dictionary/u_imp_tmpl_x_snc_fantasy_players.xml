@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="Imp Tmpl X Snc Fantasy Players" max_length="40" name="u_imp_tmpl_x_snc_fantasy_players" type="collection">
+        <element attributes="import_attribute_name=ADP" label="ADP" max_length="20" name="u_adp" type="integer"/>
+        <element attributes="import_attribute_name=Avg Rank,edge_encryption_enabled=true" label="Avg Rank" max_length="20" name="u_avg_rank" type="string"/>
+        <element attributes="import_attribute_name=Best Rank" label="Best Rank" max_length="20" name="u_best_rank" type="integer"/>
+        <element attributes="import_attribute_name=Name,edge_encryption_enabled=true" label="Name" max_length="40" name="u_name" type="string"/>
+        <element attributes="import_attribute_name=Position,edge_encryption_enabled=true" label="Position" max_length="40" name="u_position" type="string"/>
+        <element attributes="import_attribute_name=Rank" label="Rank" max_length="20" name="u_rank" type="integer"/>
+        <element attributes="import_attribute_name=Std Dev,edge_encryption_enabled=true" label="Std Dev" max_length="20" name="u_std_dev" type="string"/>
+        <element attributes="import_attribute_name=Team,edge_encryption_enabled=true" label="Team" max_length="40" name="u_team" type="string"/>
+        <element attributes="import_attribute_name=Worst Rank" label="Worst Rank" max_length="20" name="u_worst_rank" type="integer"/>
+    </element>
+</database>

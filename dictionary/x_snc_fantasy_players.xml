@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Players" max_length="40" name="x_snc_fantasy_players" type="collection">
+        <element label="ADP" max_length="20" name="adp" type="decimal"/>
+        <element label="Avg Rank" max_length="20" name="avg_rank" type="decimal"/>
+        <element label="Best Rank" max_length="20" name="best_rank" type="decimal"/>
+        <element display="true" label="Name" max_length="40" name="name" type="string"/>
+        <element choice="3" label="Position" max_length="40" name="position" type="choice">
+            <choice>
+                <element label="DST" value="DST"/>
+                <element label="K" value="K"/>
+                <element label="QB" value="QB"/>
+                <element label="RB" value="RB"/>
+                <element label="TE" value="TE"/>
+                <element label="WR" value="WR"/>
+            </choice>
+        </element>
+        <element label="Rank" max_length="20" name="rank" type="decimal"/>
+        <element label="Std Dev" max_length="20" name="std_dev" type="decimal"/>
+        <element choice="3" label="Team" max_length="40" name="team" reference="x_snc_fantasy_teams" type="reference">
+            <choice>
+                <element label="ARI" value="ARI"/>
+                <element label="ATL" value="ATL"/>
+                <element label="BAL"/>
+                <element label="BUF"/>
+                <element label="CAR"/>
+                <element label="CHI"/>
+                <element label="CIN"/>
+                <element label="CLE"/>
+                <element label="DAL"/>
+                <element label="DEN"/>
+                <element label="DET"/>
+                <element label="FA"/>
+                <element label="GB"/>
+                <element label="HOU"/>
+                <element label="IND"/>
+                <element label="JAC"/>
+                <element label="KC"/>
+                <element label="LA"/>
+                <element label="MIA"/>
+                <element label="MIN"/>
+                <element label="NE"/>
+                <element label="NO"/>
+                <element label="NYG"/>
+                <element label="NYJ"/>
+                <element label="OAK"/>
+                <element label="PHI"/>
+                <element label="PIT"/>
+                <element label="SD"/>
+                <element label="SEA"/>
+                <element label="SF"/>
+                <element label="TB"/>
+                <element label="TEN"/>
+                <element label="WAS"/>
+            </choice>
+        </element>
+        <element label="Worst Rank" max_length="20" name="worst_rank" type="decimal"/>
+    </element>
+</database>

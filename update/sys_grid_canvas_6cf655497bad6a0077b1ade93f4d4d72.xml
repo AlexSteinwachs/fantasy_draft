@@ -1,0 +1,1824 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update node_type="sys_grid_canvas" unload_date="2016-09-08 14:44:35">
+    <sys_grid_canvas action="INSERT_OR_UPDATE">
+        <legacy_page display_value="PA New Tab 1">28f655497bad6a0077b1ade93f4d4d72</legacy_page>
+        <name>PA New Tab 1</name>
+        <sys_class_name>sys_grid_canvas</sys_class_name>
+        <sys_created_by>alex</sys_created_by>
+        <sys_created_on>2016-08-28 08:19:31</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>6cf655497bad6a0077b1ade93f4d4d72</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PA New Tab 1</sys_name>
+        <sys_package display_value="Fantasy Football Draft Picker" source="x_snc_fantasy">a8bcca207b616a00a984804b5e4d4ddf</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Fantasy Football Draft Picker">a8bcca207b616a00a984804b5e4d4ddf</sys_scope>
+        <sys_update_name>sys_grid_canvas_6cf655497bad6a0077b1ade93f4d4d72</sys_update_name>
+        <sys_updated_by>alex</sys_updated_by>
+        <sys_updated_on>2016-08-28 08:19:31</sys_updated_on>
+        <related_items_node>
+            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                <grid_canvas display_value="PA New Tab 1">6cf655497bad6a0077b1ade93f4d4d72</grid_canvas>
+                <height>12</height>
+                <portal_widget display_value="Created 2016-08-28 04:43:06">025c550d7bad6a0077b1ade93f4d4d62</portal_widget>
+                <posx>8</posx>
+                <posy>18</posy>
+                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                <sys_created_by>alex</sys_created_by>
+                <sys_created_on>2016-08-28 08:43:06</sys_created_on>
+                <sys_customer_update>true</sys_customer_update>
+                <sys_id>0a5c550d7bad6a0077b1ade93f4d4d63</sys_id>
+                <sys_mod_count>18</sys_mod_count>
+                <sys_name/>
+                <sys_package display_value="Fantasy Football Draft Picker" source="x_snc_fantasy">a8bcca207b616a00a984804b5e4d4ddf</sys_package>
+                <sys_policy/>
+                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                <sys_scope display_value="Fantasy Football Draft Picker">a8bcca207b616a00a984804b5e4d4ddf</sys_scope>
+                <sys_update_name>sys_grid_canvas_pane_0a5c550d7bad6a0077b1ade93f4d4d63</sys_update_name>
+                <sys_updated_by>alex</sys_updated_by>
+                <sys_updated_on>2016-08-29 02:30:46</sys_updated_on>
+                <width>2</width>
+                <related_items_node>
+                    <sys_portal action="INSERT_OR_UPDATE">
+                        <dropzone/>
+                        <offset/>
+                        <page/>
+                        <summary>Draft - Owner by Position</summary>
+                        <sys_created_by>alex</sys_created_by>
+                        <sys_created_on>2016-08-28 08:43:06</sys_created_on>
+                        <sys_id>025c550d7bad6a0077b1ade93f4d4d62</sys_id>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>alex</sys_updated_by>
+                        <sys_updated_on>2016-08-28 08:43:06</sys_updated_on>
+                        <related_items_node>
+                            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                                <grid_canvas display_value="PA New Tab 1">6cf655497bad6a0077b1ade93f4d4d72</grid_canvas>
+                                <height>12</height>
+                                <portal_widget display_value="Created 2016-08-28 04:43:06">025c550d7bad6a0077b1ade93f4d4d62</portal_widget>
+                                <posx>8</posx>
+                                <posy>18</posy>
+                                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:43:06</sys_created_on>
+                                <sys_customer_update>true</sys_customer_update>
+                                <sys_id>0a5c550d7bad6a0077b1ade93f4d4d63</sys_id>
+                                <sys_mod_count>18</sys_mod_count>
+                                <sys_name/>
+                                <sys_package display_value="Fantasy Football Draft Picker" source="x_snc_fantasy">a8bcca207b616a00a984804b5e4d4ddf</sys_package>
+                                <sys_policy/>
+                                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                                <sys_scope display_value="Fantasy Football Draft Picker">a8bcca207b616a00a984804b5e4d4ddf</sys_scope>
+                                <sys_update_name>sys_grid_canvas_pane_0a5c550d7bad6a0077b1ade93f4d4d63</sys_update_name>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-29 02:30:46</sys_updated_on>
+                                <width>2</width>
+                            </sys_grid_canvas_pane>
+                        </related_items_node>
+                        <related_items_node>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>publisher_widget</name>
+                                <portal_section display_value="Created 2016-08-28 04:43:06">025c550d7bad6a0077b1ade93f4d4d62</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:43:43</sys_created_on>
+                                <sys_id>0b7cd50d7bad6a0077b1ade93f4d4d85</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:43:43</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>can_subscribe</name>
+                                <portal_section display_value="Created 2016-08-28 04:43:06">025c550d7bad6a0077b1ade93f4d4d62</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:43:06</sys_created_on>
+                                <sys_id>0e5c550d7bad6a0077b1ade93f4d4d62</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:43:06</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>real_time</name>
+                                <portal_section display_value="Created 2016-08-28 04:43:06">025c550d7bad6a0077b1ade93f4d4d62</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:43:43</sys_created_on>
+                                <sys_id>437cd50d7bad6a0077b1ade93f4d4d86</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:43:43</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_border</name>
+                                <portal_section display_value="Created 2016-08-28 04:43:06">025c550d7bad6a0077b1ade93f4d4d62</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:43:43</sys_created_on>
+                                <sys_id>477cd50d7bad6a0077b1ade93f4d4d85</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:43:43</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>help_text_window</name>
+                                <portal_section display_value="Created 2016-08-28 04:43:06">025c550d7bad6a0077b1ade93f4d4d62</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:43:06</sys_created_on>
+                                <sys_id>4a5c550d7bad6a0077b1ade93f4d4d62</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:43:06</sys_updated_on>
+                                <value>report_widget_description</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title</name>
+                                <portal_section display_value="Created 2016-08-28 04:43:06">025c550d7bad6a0077b1ade93f4d4d62</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:43:06</sys_created_on>
+                                <sys_id>825c550d7bad6a0077b1ade93f4d4d63</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:43:06</sys_updated_on>
+                                <value>Draft - Owner by Position</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title_align</name>
+                                <portal_section display_value="Created 2016-08-28 04:43:06">025c550d7bad6a0077b1ade93f4d4d62</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:43:43</sys_created_on>
+                                <sys_id>837cd50d7bad6a0077b1ade93f4d4d85</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:43:43</sys_updated_on>
+                                <value>center</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>renderer</name>
+                                <portal_section display_value="Created 2016-08-28 04:43:06">025c550d7bad6a0077b1ade93f4d4d62</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:43:06</sys_created_on>
+                                <sys_id>865c550d7bad6a0077b1ade93f4d4d62</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:43:06</sys_updated_on>
+                                <value>com.glide.ui.portal.RenderReport</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>filter_indicator</name>
+                                <portal_section display_value="Created 2016-08-28 04:43:06">025c550d7bad6a0077b1ade93f4d4d62</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:43:43</sys_created_on>
+                                <sys_id>8f7cd50d7bad6a0077b1ade93f4d4d85</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:43:43</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>sys_id</name>
+                                <portal_section display_value="Created 2016-08-28 04:43:06">025c550d7bad6a0077b1ade93f4d4d62</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:43:06</sys_created_on>
+                                <sys_id>c25c550d7bad6a0077b1ade93f4d4d62</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:43:06</sys_updated_on>
+                                <value>627b1dc97bad6a0077b1ade93f4d4db4</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>subscriber_widget</name>
+                                <portal_section display_value="Created 2016-08-28 04:43:06">025c550d7bad6a0077b1ade93f4d4d62</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:43:43</sys_created_on>
+                                <sys_id>cb7cd50d7bad6a0077b1ade93f4d4d85</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:43:43</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>report_type</name>
+                                <portal_section display_value="Created 2016-08-28 04:43:06">025c550d7bad6a0077b1ade93f4d4d62</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:43:06</sys_created_on>
+                                <sys_id>ce5c550d7bad6a0077b1ade93f4d4d62</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:43:06</sys_updated_on>
+                                <value>pivot</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_title</name>
+                                <portal_section display_value="Created 2016-08-28 04:43:06">025c550d7bad6a0077b1ade93f4d4d62</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:43:43</sys_created_on>
+                                <sys_id>cf7cd50d7bad6a0077b1ade93f4d4d84</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:43:43</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                        </related_items_node>
+                    </sys_portal>
+                </related_items_node>
+                <related_items_node>
+                    <sys_portal action="INSERT_OR_UPDATE">
+                        <dropzone/>
+                        <offset/>
+                        <page/>
+                        <summary>Draft Number</summary>
+                        <sys_created_by>alex</sys_created_by>
+                        <sys_created_on>2016-08-28 08:27:27</sys_created_on>
+                        <sys_id>38c8d5897bad6a0077b1ade93f4d4d8b</sys_id>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>alex</sys_updated_by>
+                        <sys_updated_on>2016-08-28 08:27:27</sys_updated_on>
+                        <related_items_node>
+                            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                                <grid_canvas display_value="PA New Tab 1">6cf655497bad6a0077b1ade93f4d4d72</grid_canvas>
+                                <height>3</height>
+                                <portal_widget display_value="Created 2016-08-28 04:27:27">38c8d5897bad6a0077b1ade93f4d4d8b</portal_widget>
+                                <posx>10</posx>
+                                <posy>0</posy>
+                                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:27:27</sys_created_on>
+                                <sys_customer_update>true</sys_customer_update>
+                                <sys_id>30c8d5897bad6a0077b1ade93f4d4d8d</sys_id>
+                                <sys_mod_count>18</sys_mod_count>
+                                <sys_name/>
+                                <sys_package display_value="Fantasy Football Draft Picker" source="x_snc_fantasy">a8bcca207b616a00a984804b5e4d4ddf</sys_package>
+                                <sys_policy/>
+                                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                                <sys_scope display_value="Fantasy Football Draft Picker">a8bcca207b616a00a984804b5e4d4ddf</sys_scope>
+                                <sys_update_name>sys_grid_canvas_pane_30c8d5897bad6a0077b1ade93f4d4d8d</sys_update_name>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-29 02:29:51</sys_updated_on>
+                                <width>2</width>
+                            </sys_grid_canvas_pane>
+                        </related_items_node>
+                        <related_items_node>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_border</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:27">38c8d5897bad6a0077b1ade93f4d4d8b</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:36:18</sys_created_on>
+                                <sys_id>16ca55c97bad6a0077b1ade93f4d4d39</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:36:18</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>publisher_widget</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:27">38c8d5897bad6a0077b1ade93f4d4d8b</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:27:27</sys_created_on>
+                                <sys_id>34c8d5897bad6a0077b1ade93f4d4d8c</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:27:27</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>type</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:27">38c8d5897bad6a0077b1ade93f4d4d8b</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:27:27</sys_created_on>
+                                <sys_id>3cc8d5897bad6a0077b1ade93f4d4d8c</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:27:27</sys_updated_on>
+                                <value>-1</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title_align</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:27">38c8d5897bad6a0077b1ade93f4d4d8b</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:36:18</sys_created_on>
+                                <sys_id>52ca55c97bad6a0077b1ade93f4d4d39</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:36:18</sys_updated_on>
+                                <value>center</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>real_time</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:27">38c8d5897bad6a0077b1ade93f4d4d8b</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:36:18</sys_created_on>
+                                <sys_id>5eca55c97bad6a0077b1ade93f4d4d39</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:36:18</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>can_publish</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:27">38c8d5897bad6a0077b1ade93f4d4d8b</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:27:27</sys_created_on>
+                                <sys_id>70c8d5897bad6a0077b1ade93f4d4d8c</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:27:27</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>filter_indicator</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:27">38c8d5897bad6a0077b1ade93f4d4d8b</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:36:18</sys_created_on>
+                                <sys_id>9aca55c97bad6a0077b1ade93f4d4d39</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:36:18</sys_updated_on>
+                                <value/>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_title</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:27">38c8d5897bad6a0077b1ade93f4d4d8b</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:36:18</sys_created_on>
+                                <sys_id>9eca55c97bad6a0077b1ade93f4d4d38</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:36:18</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>renderer</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:27">38c8d5897bad6a0077b1ade93f4d4d8b</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:27:27</sys_created_on>
+                                <sys_id>bcc8d5897bad6a0077b1ade93f4d4d8b</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:27:27</sys_updated_on>
+                                <value>com.glideapp.home.RenderHomepagePublishers</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>subscriber_widget</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:27">38c8d5897bad6a0077b1ade93f4d4d8b</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:36:18</sys_created_on>
+                                <sys_id>d6ca55c97bad6a0077b1ade93f4d4d39</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:36:18</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:27">38c8d5897bad6a0077b1ade93f4d4d8b</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:27:27</sys_created_on>
+                                <sys_id>f4c8d5897bad6a0077b1ade93f4d4d8c</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:27:27</sys_updated_on>
+                                <value>Draft Number</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>sys_id</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:27">38c8d5897bad6a0077b1ade93f4d4d8b</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:27:27</sys_created_on>
+                                <sys_id>f8c8d5897bad6a0077b1ade93f4d4d8b</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:27:27</sys_updated_on>
+                                <value>3617d9497bad6a0077b1ade93f4d4d15</value>
+                            </sys_portal_preferences>
+                        </related_items_node>
+                    </sys_portal>
+                </related_items_node>
+                <related_items_node>
+                    <sys_portal action="INSERT_OR_UPDATE">
+                        <dropzone/>
+                        <offset/>
+                        <page/>
+                        <summary>Draft - Bye Week to Owner</summary>
+                        <sys_created_by>alex</sys_created_by>
+                        <sys_created_on>2016-08-28 08:34:55</sys_created_on>
+                        <sys_id>5a7a15c97bad6a0077b1ade93f4d4dc1</sys_id>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>alex</sys_updated_by>
+                        <sys_updated_on>2016-08-28 08:34:55</sys_updated_on>
+                        <related_items_node>
+                            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                                <grid_canvas display_value="PA New Tab 1">6cf655497bad6a0077b1ade93f4d4d72</grid_canvas>
+                                <height>18</height>
+                                <portal_widget display_value="Created 2016-08-28 04:34:55">5a7a15c97bad6a0077b1ade93f4d4dc1</portal_widget>
+                                <posx>0</posx>
+                                <posy>0</posy>
+                                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:34:56</sys_created_on>
+                                <sys_customer_update>true</sys_customer_update>
+                                <sys_id>527a15c97bad6a0077b1ade93f4d4dc3</sys_id>
+                                <sys_mod_count>20</sys_mod_count>
+                                <sys_name/>
+                                <sys_package display_value="Fantasy Football Draft Picker" source="x_snc_fantasy">a8bcca207b616a00a984804b5e4d4ddf</sys_package>
+                                <sys_policy/>
+                                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                                <sys_scope display_value="Fantasy Football Draft Picker">a8bcca207b616a00a984804b5e4d4ddf</sys_scope>
+                                <sys_update_name>sys_grid_canvas_pane_527a15c97bad6a0077b1ade93f4d4dc3</sys_update_name>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-29 02:29:58</sys_updated_on>
+                                <width>5</width>
+                            </sys_grid_canvas_pane>
+                        </related_items_node>
+                        <related_items_node>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>filter_indicator</name>
+                                <portal_section display_value="Created 2016-08-28 04:34:55">5a7a15c97bad6a0077b1ade93f4d4dc1</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:36:06</sys_created_on>
+                                <sys_id>13ba15c97bad6a0077b1ade93f4d4ddd</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:36:06</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title_align</name>
+                                <portal_section display_value="Created 2016-08-28 04:34:55">5a7a15c97bad6a0077b1ade93f4d4dc1</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:36:06</sys_created_on>
+                                <sys_id>17ba15c97bad6a0077b1ade93f4d4ddc</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:36:06</sys_updated_on>
+                                <value>center</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>report_type</name>
+                                <portal_section display_value="Created 2016-08-28 04:34:55">5a7a15c97bad6a0077b1ade93f4d4dc1</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:34:55</sys_created_on>
+                                <sys_id>1a7a15c97bad6a0077b1ade93f4d4dc2</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:34:55</sys_updated_on>
+                                <value>heatmap</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>sys_id</name>
+                                <portal_section display_value="Created 2016-08-28 04:34:55">5a7a15c97bad6a0077b1ade93f4d4dc1</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:34:55</sys_created_on>
+                                <sys_id>1e7a15c97bad6a0077b1ade93f4d4dc1</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:34:55</sys_updated_on>
+                                <value>d02a11c97bad6a0077b1ade93f4d4d9d</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_title</name>
+                                <portal_section display_value="Created 2016-08-28 04:34:55">5a7a15c97bad6a0077b1ade93f4d4dc1</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:36:06</sys_created_on>
+                                <sys_id>53ba15c97bad6a0077b1ade93f4d4ddc</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:36:06</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>can_subscribe</name>
+                                <portal_section display_value="Created 2016-08-28 04:34:55">5a7a15c97bad6a0077b1ade93f4d4dc1</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:34:55</sys_created_on>
+                                <sys_id>567a15c97bad6a0077b1ade93f4d4dc2</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:34:55</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>subscriber_widget</name>
+                                <portal_section display_value="Created 2016-08-28 04:34:55">5a7a15c97bad6a0077b1ade93f4d4dc1</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:36:06</sys_created_on>
+                                <sys_id>5fba15c97bad6a0077b1ade93f4d4ddc</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:36:06</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>help_text_window</name>
+                                <portal_section display_value="Created 2016-08-28 04:34:55">5a7a15c97bad6a0077b1ade93f4d4dc1</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:34:55</sys_created_on>
+                                <sys_id>927a15c97bad6a0077b1ade93f4d4dc2</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:34:55</sys_updated_on>
+                                <value>report_widget_description</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>publisher_widget</name>
+                                <portal_section display_value="Created 2016-08-28 04:34:55">5a7a15c97bad6a0077b1ade93f4d4dc1</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:36:06</sys_created_on>
+                                <sys_id>9bba15c97bad6a0077b1ade93f4d4ddc</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:36:06</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>real_time</name>
+                                <portal_section display_value="Created 2016-08-28 04:34:55">5a7a15c97bad6a0077b1ade93f4d4dc1</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:36:06</sys_created_on>
+                                <sys_id>d3ba15c97bad6a0077b1ade93f4d4ddd</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:36:06</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_border</name>
+                                <portal_section display_value="Created 2016-08-28 04:34:55">5a7a15c97bad6a0077b1ade93f4d4dc1</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:36:06</sys_created_on>
+                                <sys_id>d7ba15c97bad6a0077b1ade93f4d4ddc</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:36:06</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title</name>
+                                <portal_section display_value="Created 2016-08-28 04:34:55">5a7a15c97bad6a0077b1ade93f4d4dc1</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:34:55</sys_created_on>
+                                <sys_id>da7a15c97bad6a0077b1ade93f4d4dc2</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:34:55</sys_updated_on>
+                                <value>Draft - Bye Week to Owner</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>renderer</name>
+                                <portal_section display_value="Created 2016-08-28 04:34:55">5a7a15c97bad6a0077b1ade93f4d4dc1</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:34:55</sys_created_on>
+                                <sys_id>de7a15c97bad6a0077b1ade93f4d4dc1</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:34:55</sys_updated_on>
+                                <value>com.glide.ui.portal.RenderReport</value>
+                            </sys_portal_preferences>
+                        </related_items_node>
+                    </sys_portal>
+                </related_items_node>
+                <related_items_node>
+                    <sys_portal action="INSERT_OR_UPDATE">
+                        <dropzone/>
+                        <offset/>
+                        <page/>
+                        <summary>Draft - Teams</summary>
+                        <sys_created_by>alex</sys_created_by>
+                        <sys_created_on>2016-08-29 02:29:47</sys_created_on>
+                        <sys_id>9b70d15d7ba1aa00a984804b5e4d4dca</sys_id>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>alex</sys_updated_by>
+                        <sys_updated_on>2016-08-29 02:29:47</sys_updated_on>
+                        <related_items_node>
+                            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                                <grid_canvas display_value="PA New Tab 1">6cf655497bad6a0077b1ade93f4d4d72</grid_canvas>
+                                <height>13</height>
+                                <portal_widget display_value="Created 2016-08-28 22:29:47">9b70d15d7ba1aa00a984804b5e4d4dca</portal_widget>
+                                <posx>2</posx>
+                                <posy>18</posy>
+                                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-29 02:29:47</sys_created_on>
+                                <sys_customer_update>true</sys_customer_update>
+                                <sys_id>5f70d95d7ba1aa00a984804b5e4d4d6c</sys_id>
+                                <sys_mod_count>7</sys_mod_count>
+                                <sys_name/>
+                                <sys_package display_value="Fantasy Football Draft Picker" source="x_snc_fantasy">a8bcca207b616a00a984804b5e4d4ddf</sys_package>
+                                <sys_policy/>
+                                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                                <sys_scope display_value="Fantasy Football Draft Picker">a8bcca207b616a00a984804b5e4d4ddf</sys_scope>
+                                <sys_update_name>sys_grid_canvas_pane_5f70d95d7ba1aa00a984804b5e4d4d6c</sys_update_name>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-29 02:30:40</sys_updated_on>
+                                <width>6</width>
+                            </sys_grid_canvas_pane>
+                        </related_items_node>
+                        <related_items_node>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>renderer</name>
+                                <portal_section display_value="Created 2016-08-28 22:29:47">9b70d15d7ba1aa00a984804b5e4d4dca</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-29 02:29:47</sys_created_on>
+                                <sys_id>1370d15d7ba1aa00a984804b5e4d4dcb</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-29 02:29:47</sys_updated_on>
+                                <value>com.glide.ui.portal.RenderReport</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>filter_indicator</name>
+                                <portal_section display_value="Created 2016-08-28 22:29:47">9b70d15d7ba1aa00a984804b5e4d4dca</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-29 02:30:59</sys_created_on>
+                                <sys_id>38c0d95d7ba1aa00a984804b5e4d4dd7</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-29 02:30:59</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title_align</name>
+                                <portal_section display_value="Created 2016-08-28 22:29:47">9b70d15d7ba1aa00a984804b5e4d4dca</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-29 02:30:59</sys_created_on>
+                                <sys_id>3cc0d95d7ba1aa00a984804b5e4d4dd6</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-29 02:30:59</sys_updated_on>
+                                <value>center</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>report_type</name>
+                                <portal_section display_value="Created 2016-08-28 22:29:47">9b70d15d7ba1aa00a984804b5e4d4dca</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-29 02:29:47</sys_created_on>
+                                <sys_id>5b70d15d7ba1aa00a984804b5e4d4dcb</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-29 02:29:47</sys_updated_on>
+                                <value>bar</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>sys_id</name>
+                                <portal_section display_value="Created 2016-08-28 22:29:47">9b70d15d7ba1aa00a984804b5e4d4dca</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-29 02:29:47</sys_created_on>
+                                <sys_id>5f70d15d7ba1aa00a984804b5e4d4dca</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-29 02:29:47</sys_updated_on>
+                                <value>a120195d7ba1aa00a984804b5e4d4d20</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>subscriber_widget</name>
+                                <portal_section display_value="Created 2016-08-28 22:29:47">9b70d15d7ba1aa00a984804b5e4d4dca</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-29 02:30:59</sys_created_on>
+                                <sys_id>74c0d95d7ba1aa00a984804b5e4d4dd7</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-29 02:30:59</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_title</name>
+                                <portal_section display_value="Created 2016-08-28 22:29:47">9b70d15d7ba1aa00a984804b5e4d4dca</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-29 02:30:59</sys_created_on>
+                                <sys_id>78c0d95d7ba1aa00a984804b5e4d4dd6</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-29 02:30:59</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>can_subscribe</name>
+                                <portal_section display_value="Created 2016-08-28 22:29:47">9b70d15d7ba1aa00a984804b5e4d4dca</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-29 02:29:47</sys_created_on>
+                                <sys_id>9770d15d7ba1aa00a984804b5e4d4dcb</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-29 02:29:47</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>publisher_widget</name>
+                                <portal_section display_value="Created 2016-08-28 22:29:47">9b70d15d7ba1aa00a984804b5e4d4dca</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-29 02:30:59</sys_created_on>
+                                <sys_id>b0c0d95d7ba1aa00a984804b5e4d4dd7</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-29 02:30:59</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>help_text_window</name>
+                                <portal_section display_value="Created 2016-08-28 22:29:47">9b70d15d7ba1aa00a984804b5e4d4dca</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-29 02:29:47</sys_created_on>
+                                <sys_id>d370d15d7ba1aa00a984804b5e4d4dcb</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-29 02:29:47</sys_updated_on>
+                                <value>report_widget_description</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title</name>
+                                <portal_section display_value="Created 2016-08-28 22:29:47">9b70d15d7ba1aa00a984804b5e4d4dca</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-29 02:29:47</sys_created_on>
+                                <sys_id>d770d95d7ba1aa00a984804b5e4d4d6c</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-29 02:29:47</sys_updated_on>
+                                <value>Draft - Teams</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>real_time</name>
+                                <portal_section display_value="Created 2016-08-28 22:29:47">9b70d15d7ba1aa00a984804b5e4d4dca</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-29 02:30:59</sys_created_on>
+                                <sys_id>f8c0d95d7ba1aa00a984804b5e4d4dd7</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-29 02:30:59</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_border</name>
+                                <portal_section display_value="Created 2016-08-28 22:29:47">9b70d15d7ba1aa00a984804b5e4d4dca</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-29 02:30:59</sys_created_on>
+                                <sys_id>fcc0d95d7ba1aa00a984804b5e4d4dd6</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-29 02:30:59</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                        </related_items_node>
+                    </sys_portal>
+                </related_items_node>
+                <related_items_node>
+                    <sys_portal action="INSERT_OR_UPDATE">
+                        <dropzone/>
+                        <offset/>
+                        <page/>
+                        <summary>Draft - Positions</summary>
+                        <sys_created_by>alex</sys_created_by>
+                        <sys_created_on>2016-08-28 08:35:06</sys_created_on>
+                        <sys_id>708a55c97bad6a0077b1ade93f4d4d32</sys_id>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>alex</sys_updated_by>
+                        <sys_updated_on>2016-08-28 08:35:06</sys_updated_on>
+                        <related_items_node>
+                            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                                <grid_canvas display_value="PA New Tab 1">6cf655497bad6a0077b1ade93f4d4d72</grid_canvas>
+                                <height>13</height>
+                                <portal_widget display_value="Created 2016-08-28 04:35:06">708a55c97bad6a0077b1ade93f4d4d32</portal_widget>
+                                <posx>0</posx>
+                                <posy>18</posy>
+                                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:35:06</sys_created_on>
+                                <sys_customer_update>true</sys_customer_update>
+                                <sys_id>788a55c97bad6a0077b1ade93f4d4d33</sys_id>
+                                <sys_mod_count>20</sys_mod_count>
+                                <sys_name/>
+                                <sys_package display_value="Fantasy Football Draft Picker" source="x_snc_fantasy">a8bcca207b616a00a984804b5e4d4ddf</sys_package>
+                                <sys_policy/>
+                                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                                <sys_scope display_value="Fantasy Football Draft Picker">a8bcca207b616a00a984804b5e4d4ddf</sys_scope>
+                                <sys_update_name>sys_grid_canvas_pane_788a55c97bad6a0077b1ade93f4d4d33</sys_update_name>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-29 02:30:47</sys_updated_on>
+                                <width>2</width>
+                            </sys_grid_canvas_pane>
+                        </related_items_node>
+                        <related_items_node>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>report_type</name>
+                                <portal_section display_value="Created 2016-08-28 04:35:06">708a55c97bad6a0077b1ade93f4d4d32</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:35:06</sys_created_on>
+                                <sys_id>308a55c97bad6a0077b1ade93f4d4d33</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:35:06</sys_updated_on>
+                                <value>donut</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title_align</name>
+                                <portal_section display_value="Created 2016-08-28 04:35:06">708a55c97bad6a0077b1ade93f4d4d32</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:35:59</sys_created_on>
+                                <sys_id>31ba55c97bad6a0077b1ade93f4d4dd8</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:35:59</sys_updated_on>
+                                <value>center</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>sys_id</name>
+                                <portal_section display_value="Created 2016-08-28 04:35:06">708a55c97bad6a0077b1ade93f4d4d32</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:35:06</sys_created_on>
+                                <sys_id>348a55c97bad6a0077b1ade93f4d4d32</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:35:06</sys_updated_on>
+                                <value>5e895d897bad6a0077b1ade93f4d4d93</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>filter_indicator</name>
+                                <portal_section display_value="Created 2016-08-28 04:35:06">708a55c97bad6a0077b1ade93f4d4d32</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:35:59</sys_created_on>
+                                <sys_id>3dba55c97bad6a0077b1ade93f4d4dd8</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:35:59</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>subscriber_widget</name>
+                                <portal_section display_value="Created 2016-08-28 04:35:06">708a55c97bad6a0077b1ade93f4d4d32</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:35:59</sys_created_on>
+                                <sys_id>79ba55c97bad6a0077b1ade93f4d4dd8</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:35:59</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>can_subscribe</name>
+                                <portal_section display_value="Created 2016-08-28 04:35:06">708a55c97bad6a0077b1ade93f4d4d32</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:35:06</sys_created_on>
+                                <sys_id>7c8a55c97bad6a0077b1ade93f4d4d32</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:35:06</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_title</name>
+                                <portal_section display_value="Created 2016-08-28 04:35:06">708a55c97bad6a0077b1ade93f4d4d32</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:35:59</sys_created_on>
+                                <sys_id>7dba55c97bad6a0077b1ade93f4d4dd7</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:35:59</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>publisher_widget</name>
+                                <portal_section display_value="Created 2016-08-28 04:35:06">708a55c97bad6a0077b1ade93f4d4d32</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:35:59</sys_created_on>
+                                <sys_id>b5ba55c97bad6a0077b1ade93f4d4dd8</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:35:59</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>help_text_window</name>
+                                <portal_section display_value="Created 2016-08-28 04:35:06">708a55c97bad6a0077b1ade93f4d4d32</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:35:06</sys_created_on>
+                                <sys_id>b88a55c97bad6a0077b1ade93f4d4d32</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:35:06</sys_updated_on>
+                                <value>report_widget_description</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title</name>
+                                <portal_section display_value="Created 2016-08-28 04:35:06">708a55c97bad6a0077b1ade93f4d4d32</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:35:06</sys_created_on>
+                                <sys_id>f08a55c97bad6a0077b1ade93f4d4d33</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:35:06</sys_updated_on>
+                                <value>Draft - Positions</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_border</name>
+                                <portal_section display_value="Created 2016-08-28 04:35:06">708a55c97bad6a0077b1ade93f4d4d32</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:35:59</sys_created_on>
+                                <sys_id>f1ba55c97bad6a0077b1ade93f4d4dd8</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:35:59</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>renderer</name>
+                                <portal_section display_value="Created 2016-08-28 04:35:06">708a55c97bad6a0077b1ade93f4d4d32</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:35:06</sys_created_on>
+                                <sys_id>f48a55c97bad6a0077b1ade93f4d4d32</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:35:06</sys_updated_on>
+                                <value>com.glide.ui.portal.RenderReport</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>real_time</name>
+                                <portal_section display_value="Created 2016-08-28 04:35:06">708a55c97bad6a0077b1ade93f4d4d32</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:35:59</sys_created_on>
+                                <sys_id>fdba55c97bad6a0077b1ade93f4d4dd8</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:35:59</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                        </related_items_node>
+                    </sys_portal>
+                </related_items_node>
+                <related_items_node>
+                    <sys_portal action="INSERT_OR_UPDATE">
+                        <dropzone/>
+                        <offset/>
+                        <page/>
+                        <summary>Draft - Bye Week to Position</summary>
+                        <sys_created_by>alex</sys_created_by>
+                        <sys_created_on>2016-08-28 08:35:02</sys_created_on>
+                        <sys_id>b77ad1c97bad6a0077b1ade93f4d4dd1</sys_id>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>alex</sys_updated_by>
+                        <sys_updated_on>2016-08-28 08:35:02</sys_updated_on>
+                        <related_items_node>
+                            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                                <grid_canvas display_value="PA New Tab 1">6cf655497bad6a0077b1ade93f4d4d72</grid_canvas>
+                                <height>18</height>
+                                <portal_widget display_value="Created 2016-08-28 04:35:02">b77ad1c97bad6a0077b1ade93f4d4dd1</portal_widget>
+                                <posx>5</posx>
+                                <posy>0</posy>
+                                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:35:02</sys_created_on>
+                                <sys_customer_update>true</sys_customer_update>
+                                <sys_id>7f7a55c97bad6a0077b1ade93f4d4dd0</sys_id>
+                                <sys_mod_count>19</sys_mod_count>
+                                <sys_name/>
+                                <sys_package display_value="Fantasy Football Draft Picker" source="x_snc_fantasy">a8bcca207b616a00a984804b5e4d4ddf</sys_package>
+                                <sys_policy/>
+                                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                                <sys_scope display_value="Fantasy Football Draft Picker">a8bcca207b616a00a984804b5e4d4ddf</sys_scope>
+                                <sys_update_name>sys_grid_canvas_pane_7f7a55c97bad6a0077b1ade93f4d4dd0</sys_update_name>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-29 02:30:01</sys_updated_on>
+                                <width>5</width>
+                            </sys_grid_canvas_pane>
+                        </related_items_node>
+                        <related_items_node>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>publisher_widget</name>
+                                <portal_section display_value="Created 2016-08-28 04:35:02">b77ad1c97bad6a0077b1ade93f4d4dd1</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:36:13</sys_created_on>
+                                <sys_id>19ca15c97bad6a0077b1ade93f4d4dc8</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:36:13</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title</name>
+                                <portal_section display_value="Created 2016-08-28 04:35:02">b77ad1c97bad6a0077b1ade93f4d4dd1</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:35:02</sys_created_on>
+                                <sys_id>3b7ad1c97bad6a0077b1ade93f4d4dd2</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:35:02</sys_updated_on>
+                                <value>Draft - Bye Week to Position</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>renderer</name>
+                                <portal_section display_value="Created 2016-08-28 04:35:02">b77ad1c97bad6a0077b1ade93f4d4dd1</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:35:02</sys_created_on>
+                                <sys_id>3f7ad1c97bad6a0077b1ade93f4d4dd1</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:35:02</sys_updated_on>
+                                <value>com.glide.ui.portal.RenderReport</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>real_time</name>
+                                <portal_section display_value="Created 2016-08-28 04:35:02">b77ad1c97bad6a0077b1ade93f4d4dd1</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:36:13</sys_created_on>
+                                <sys_id>51ca15c97bad6a0077b1ade93f4d4dc9</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:36:13</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_border</name>
+                                <portal_section display_value="Created 2016-08-28 04:35:02">b77ad1c97bad6a0077b1ade93f4d4dd1</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:36:13</sys_created_on>
+                                <sys_id>55ca15c97bad6a0077b1ade93f4d4dc8</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:36:13</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>report_type</name>
+                                <portal_section display_value="Created 2016-08-28 04:35:02">b77ad1c97bad6a0077b1ade93f4d4dd1</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:35:02</sys_created_on>
+                                <sys_id>777ad1c97bad6a0077b1ade93f4d4dd2</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:35:02</sys_updated_on>
+                                <value>heatmap</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>sys_id</name>
+                                <portal_section display_value="Created 2016-08-28 04:35:02">b77ad1c97bad6a0077b1ade93f4d4dd1</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:35:02</sys_created_on>
+                                <sys_id>7b7ad1c97bad6a0077b1ade93f4d4dd1</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:35:02</sys_updated_on>
+                                <value>e3e911c97bad6a0077b1ade93f4d4d9a</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title_align</name>
+                                <portal_section display_value="Created 2016-08-28 04:35:02">b77ad1c97bad6a0077b1ade93f4d4dd1</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:36:13</sys_created_on>
+                                <sys_id>91ca15c97bad6a0077b1ade93f4d4dc8</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:36:13</sys_updated_on>
+                                <value>center</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>filter_indicator</name>
+                                <portal_section display_value="Created 2016-08-28 04:35:02">b77ad1c97bad6a0077b1ade93f4d4dd1</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:36:13</sys_created_on>
+                                <sys_id>9dca15c97bad6a0077b1ade93f4d4dc8</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:36:13</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>can_subscribe</name>
+                                <portal_section display_value="Created 2016-08-28 04:35:02">b77ad1c97bad6a0077b1ade93f4d4dd1</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:35:02</sys_created_on>
+                                <sys_id>b37ad1c97bad6a0077b1ade93f4d4dd2</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:35:02</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>subscriber_widget</name>
+                                <portal_section display_value="Created 2016-08-28 04:35:02">b77ad1c97bad6a0077b1ade93f4d4dd1</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:36:13</sys_created_on>
+                                <sys_id>d9ca15c97bad6a0077b1ade93f4d4dc8</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:36:13</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_title</name>
+                                <portal_section display_value="Created 2016-08-28 04:35:02">b77ad1c97bad6a0077b1ade93f4d4dd1</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:36:13</sys_created_on>
+                                <sys_id>ddca15c97bad6a0077b1ade93f4d4dc7</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:36:13</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>help_text_window</name>
+                                <portal_section display_value="Created 2016-08-28 04:35:02">b77ad1c97bad6a0077b1ade93f4d4dd1</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:35:02</sys_created_on>
+                                <sys_id>ff7ad1c97bad6a0077b1ade93f4d4dd1</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:35:02</sys_updated_on>
+                                <value>report_widget_description</value>
+                            </sys_portal_preferences>
+                        </related_items_node>
+                    </sys_portal>
+                </related_items_node>
+                <related_items_node>
+                    <sys_portal action="INSERT_OR_UPDATE">
+                        <dropzone/>
+                        <offset/>
+                        <page/>
+                        <summary>Draft - Position</summary>
+                        <sys_created_by>alex</sys_created_by>
+                        <sys_created_on>2016-08-28 08:27:10</sys_created_on>
+                        <sys_id>a8b8d5897bad6a0077b1ade93f4d4d88</sys_id>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>alex</sys_updated_by>
+                        <sys_updated_on>2016-08-28 08:27:10</sys_updated_on>
+                        <related_items_node>
+                            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                                <grid_canvas display_value="PA New Tab 1">6cf655497bad6a0077b1ade93f4d4d72</grid_canvas>
+                                <height>4</height>
+                                <portal_widget display_value="Created 2016-08-28 04:27:10">a8b8d5897bad6a0077b1ade93f4d4d88</portal_widget>
+                                <posx>10</posx>
+                                <posy>3</posy>
+                                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:27:10</sys_created_on>
+                                <sys_customer_update>true</sys_customer_update>
+                                <sys_id>a0b8d5897bad6a0077b1ade93f4d4d8a</sys_id>
+                                <sys_mod_count>24</sys_mod_count>
+                                <sys_name/>
+                                <sys_package display_value="Fantasy Football Draft Picker" source="x_snc_fantasy">a8bcca207b616a00a984804b5e4d4ddf</sys_package>
+                                <sys_policy/>
+                                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                                <sys_scope display_value="Fantasy Football Draft Picker">a8bcca207b616a00a984804b5e4d4ddf</sys_scope>
+                                <sys_update_name>sys_grid_canvas_pane_a0b8d5897bad6a0077b1ade93f4d4d8a</sys_update_name>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-29 02:29:51</sys_updated_on>
+                                <width>2</width>
+                            </sys_grid_canvas_pane>
+                        </related_items_node>
+                        <related_items_node>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_title</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:10">a8b8d5897bad6a0077b1ade93f4d4d88</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:36:22</sys_created_on>
+                                <sys_id>13ca15c97bad6a0077b1ade93f4d4ddf</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:36:22</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>filter_indicator</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:10">a8b8d5897bad6a0077b1ade93f4d4d88</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:36:22</sys_created_on>
+                                <sys_id>1fca15c97bad6a0077b1ade93f4d4ddf</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:36:22</sys_updated_on>
+                                <value/>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>renderer</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:10">a8b8d5897bad6a0077b1ade93f4d4d88</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:27:10</sys_created_on>
+                                <sys_id>20b8d5897bad6a0077b1ade93f4d4d89</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:27:10</sys_updated_on>
+                                <value>com.glideapp.home.RenderHomepagePublishers</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>subscriber_widget</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:10">a8b8d5897bad6a0077b1ade93f4d4d88</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:36:22</sys_created_on>
+                                <sys_id>5bca15c97bad6a0077b1ade93f4d4ddf</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:36:22</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:10">a8b8d5897bad6a0077b1ade93f4d4d88</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:27:10</sys_created_on>
+                                <sys_id>68b8d5897bad6a0077b1ade93f4d4d89</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:27:10</sys_updated_on>
+                                <value>Draft - Position</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>sys_id</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:10">a8b8d5897bad6a0077b1ade93f4d4d88</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:27:10</sys_created_on>
+                                <sys_id>6cb8d5897bad6a0077b1ade93f4d4d88</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:27:10</sys_updated_on>
+                                <value>b2b711897bad6a0077b1ade93f4d4d2b</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_border</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:10">a8b8d5897bad6a0077b1ade93f4d4d88</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:36:22</sys_created_on>
+                                <sys_id>97ca15c97bad6a0077b1ade93f4d4ddf</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:36:22</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>publisher_widget</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:10">a8b8d5897bad6a0077b1ade93f4d4d88</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:27:10</sys_created_on>
+                                <sys_id>a4b8d5897bad6a0077b1ade93f4d4d89</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:27:10</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>type</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:10">a8b8d5897bad6a0077b1ade93f4d4d88</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:27:10</sys_created_on>
+                                <sys_id>acb8d5897bad6a0077b1ade93f4d4d89</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:27:10</sys_updated_on>
+                                <value>-1</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title_align</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:10">a8b8d5897bad6a0077b1ade93f4d4d88</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:36:22</sys_created_on>
+                                <sys_id>d3ca15c97bad6a0077b1ade93f4d4ddf</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:36:22</sys_updated_on>
+                                <value>center</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>real_time</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:10">a8b8d5897bad6a0077b1ade93f4d4d88</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:36:22</sys_created_on>
+                                <sys_id>dfca15c97bad6a0077b1ade93f4d4ddf</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:36:22</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>can_publish</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:10">a8b8d5897bad6a0077b1ade93f4d4d88</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:27:10</sys_created_on>
+                                <sys_id>e0b8d5897bad6a0077b1ade93f4d4d89</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:27:10</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                        </related_items_node>
+                    </sys_portal>
+                </related_items_node>
+                <related_items_node>
+                    <sys_portal action="INSERT_OR_UPDATE">
+                        <dropzone/>
+                        <offset/>
+                        <page/>
+                        <summary>Draft - NFL Team</summary>
+                        <sys_created_by>alex</sys_created_by>
+                        <sys_created_on>2016-08-28 08:27:03</sys_created_on>
+                        <sys_id>b6a895897bad6a0077b1ade93f4d4d92</sys_id>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>alex</sys_updated_by>
+                        <sys_updated_on>2016-08-28 08:27:03</sys_updated_on>
+                        <related_items_node>
+                            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                                <grid_canvas display_value="PA New Tab 1">6cf655497bad6a0077b1ade93f4d4d72</grid_canvas>
+                                <height>4</height>
+                                <portal_widget display_value="Created 2016-08-28 04:27:03">b6a895897bad6a0077b1ade93f4d4d92</portal_widget>
+                                <posx>10</posx>
+                                <posy>7</posy>
+                                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:27:03</sys_created_on>
+                                <sys_customer_update>true</sys_customer_update>
+                                <sys_id>bea895897bad6a0077b1ade93f4d4d93</sys_id>
+                                <sys_mod_count>29</sys_mod_count>
+                                <sys_name/>
+                                <sys_package display_value="Fantasy Football Draft Picker" source="x_snc_fantasy">a8bcca207b616a00a984804b5e4d4ddf</sys_package>
+                                <sys_policy/>
+                                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                                <sys_scope display_value="Fantasy Football Draft Picker">a8bcca207b616a00a984804b5e4d4ddf</sys_scope>
+                                <sys_update_name>sys_grid_canvas_pane_bea895897bad6a0077b1ade93f4d4d93</sys_update_name>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-29 02:29:51</sys_updated_on>
+                                <width>2</width>
+                            </sys_grid_canvas_pane>
+                        </related_items_node>
+                        <related_items_node>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>subscriber_widget</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:03">b6a895897bad6a0077b1ade93f4d4d92</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:36:25</sys_created_on>
+                                <sys_id>00da15c97bad6a0077b1ade93f4d4dcb</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:36:25</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>renderer</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:03">b6a895897bad6a0077b1ade93f4d4d92</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:27:03</sys_created_on>
+                                <sys_id>3ea895897bad6a0077b1ade93f4d4d92</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:27:03</sys_updated_on>
+                                <value>com.glideapp.home.RenderHomepagePublishers</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>real_time</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:03">b6a895897bad6a0077b1ade93f4d4d92</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:36:25</sys_created_on>
+                                <sys_id>44da19c97bad6a0077b1ade93f4d4d57</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:36:25</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_border</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:03">b6a895897bad6a0077b1ade93f4d4d92</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:36:25</sys_created_on>
+                                <sys_id>4cda15c97bad6a0077b1ade93f4d4dca</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:36:25</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:03">b6a895897bad6a0077b1ade93f4d4d92</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:27:03</sys_created_on>
+                                <sys_id>76a895897bad6a0077b1ade93f4d4d93</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:27:03</sys_updated_on>
+                                <value>Draft - NFL Team</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>sys_id</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:03">b6a895897bad6a0077b1ade93f4d4d92</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:27:03</sys_created_on>
+                                <sys_id>7aa895897bad6a0077b1ade93f4d4d92</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:27:03</sys_updated_on>
+                                <value>e1675d497bad6a0077b1ade93f4d4d74</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title_align</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:03">b6a895897bad6a0077b1ade93f4d4d92</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:36:25</sys_created_on>
+                                <sys_id>88da15c97bad6a0077b1ade93f4d4dca</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:36:25</sys_updated_on>
+                                <value>center</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>publisher_widget</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:03">b6a895897bad6a0077b1ade93f4d4d92</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:27:03</sys_created_on>
+                                <sys_id>b2a895897bad6a0077b1ade93f4d4d93</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:27:03</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>type</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:03">b6a895897bad6a0077b1ade93f4d4d92</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:27:03</sys_created_on>
+                                <sys_id>baa895897bad6a0077b1ade93f4d4d93</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:27:03</sys_updated_on>
+                                <value>-1</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>filter_indicator</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:03">b6a895897bad6a0077b1ade93f4d4d92</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:36:25</sys_created_on>
+                                <sys_id>c0da15c97bad6a0077b1ade93f4d4dcb</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:36:25</sys_updated_on>
+                                <value/>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_title</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:03">b6a895897bad6a0077b1ade93f4d4d92</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:36:25</sys_created_on>
+                                <sys_id>c4da15c97bad6a0077b1ade93f4d4dca</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:36:25</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>can_publish</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:03">b6a895897bad6a0077b1ade93f4d4d92</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:27:03</sys_created_on>
+                                <sys_id>fea895897bad6a0077b1ade93f4d4d92</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:27:03</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                        </related_items_node>
+                    </sys_portal>
+                </related_items_node>
+                <related_items_node>
+                    <sys_portal action="INSERT_OR_UPDATE">
+                        <dropzone/>
+                        <offset/>
+                        <page/>
+                        <summary>Draft - Owners</summary>
+                        <sys_created_by>alex</sys_created_by>
+                        <sys_created_on>2016-08-28 08:27:07</sys_created_on>
+                        <sys_id>b7a895897bad6a0077b1ade93f4d4db5</sys_id>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>alex</sys_updated_by>
+                        <sys_updated_on>2016-08-28 08:27:07</sys_updated_on>
+                        <related_items_node>
+                            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                                <grid_canvas display_value="PA New Tab 1">6cf655497bad6a0077b1ade93f4d4d72</grid_canvas>
+                                <height>16</height>
+                                <portal_widget display_value="Created 2016-08-28 04:27:07">b7a895897bad6a0077b1ade93f4d4db5</portal_widget>
+                                <posx>10</posx>
+                                <posy>11</posy>
+                                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:27:07</sys_created_on>
+                                <sys_customer_update>true</sys_customer_update>
+                                <sys_id>bfa895897bad6a0077b1ade93f4d4db6</sys_id>
+                                <sys_mod_count>35</sys_mod_count>
+                                <sys_name/>
+                                <sys_package display_value="Fantasy Football Draft Picker" source="x_snc_fantasy">a8bcca207b616a00a984804b5e4d4ddf</sys_package>
+                                <sys_policy/>
+                                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                                <sys_scope display_value="Fantasy Football Draft Picker">a8bcca207b616a00a984804b5e4d4ddf</sys_scope>
+                                <sys_update_name>sys_grid_canvas_pane_bfa895897bad6a0077b1ade93f4d4db6</sys_update_name>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-29 02:55:35</sys_updated_on>
+                                <width>2</width>
+                            </sys_grid_canvas_pane>
+                        </related_items_node>
+                        <related_items_node>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>subscriber_widget</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:07">b7a895897bad6a0077b1ade93f4d4db5</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:36:29</sys_created_on>
+                                <sys_id>09da19c97bad6a0077b1ade93f4d4d4c</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:36:29</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>renderer</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:07">b7a895897bad6a0077b1ade93f4d4db5</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:27:07</sys_created_on>
+                                <sys_id>3fa895897bad6a0077b1ade93f4d4db5</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:27:07</sys_updated_on>
+                                <value>com.glideapp.home.RenderHomepagePublishers</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_border</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:07">b7a895897bad6a0077b1ade93f4d4db5</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:36:29</sys_created_on>
+                                <sys_id>45da19c97bad6a0077b1ade93f4d4d4c</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:36:29</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:07">b7a895897bad6a0077b1ade93f4d4db5</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:27:07</sys_created_on>
+                                <sys_id>77a895897bad6a0077b1ade93f4d4db6</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:27:07</sys_updated_on>
+                                <value>Draft - Owners</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>sys_id</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:07">b7a895897bad6a0077b1ade93f4d4db5</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:27:07</sys_created_on>
+                                <sys_id>7ba895897bad6a0077b1ade93f4d4db5</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:27:07</sys_updated_on>
+                                <value>2a0891897bad6a0077b1ade93f4d4dad</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title_align</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:07">b7a895897bad6a0077b1ade93f4d4db5</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:36:29</sys_created_on>
+                                <sys_id>81da19c97bad6a0077b1ade93f4d4d4c</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:36:29</sys_updated_on>
+                                <value>center</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>real_time</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:07">b7a895897bad6a0077b1ade93f4d4db5</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:36:29</sys_created_on>
+                                <sys_id>8dda19c97bad6a0077b1ade93f4d4d4c</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:36:29</sys_updated_on>
+                                <value>false</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>publisher_widget</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:07">b7a895897bad6a0077b1ade93f4d4db5</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:27:07</sys_created_on>
+                                <sys_id>b3a895897bad6a0077b1ade93f4d4db6</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:27:07</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>type</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:07">b7a895897bad6a0077b1ade93f4d4db5</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:27:07</sys_created_on>
+                                <sys_id>bba895897bad6a0077b1ade93f4d4db6</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:27:07</sys_updated_on>
+                                <value>-1</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>filter_indicator</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:07">b7a895897bad6a0077b1ade93f4d4db5</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:36:29</sys_created_on>
+                                <sys_id>c9da19c97bad6a0077b1ade93f4d4d4c</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:36:29</sys_updated_on>
+                                <value/>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>show_title</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:07">b7a895897bad6a0077b1ade93f4d4db5</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:36:29</sys_created_on>
+                                <sys_id>cdda19c97bad6a0077b1ade93f4d4d4b</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:36:29</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>can_publish</name>
+                                <portal_section display_value="Created 2016-08-28 04:27:07">b7a895897bad6a0077b1ade93f4d4db5</portal_section>
+                                <sys_created_by>alex</sys_created_by>
+                                <sys_created_on>2016-08-28 08:27:07</sys_created_on>
+                                <sys_id>ffa895897bad6a0077b1ade93f4d4db5</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>alex</sys_updated_by>
+                                <sys_updated_on>2016-08-28 08:27:07</sys_updated_on>
+                                <value>true</value>
+                            </sys_portal_preferences>
+                        </related_items_node>
+                    </sys_portal>
+                </related_items_node>
+            </sys_grid_canvas_pane>
+            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                <grid_canvas display_value="PA New Tab 1">6cf655497bad6a0077b1ade93f4d4d72</grid_canvas>
+                <height>3</height>
+                <portal_widget display_value="Created 2016-08-28 04:27:27">38c8d5897bad6a0077b1ade93f4d4d8b</portal_widget>
+                <posx>10</posx>
+                <posy>0</posy>
+                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                <sys_created_by>alex</sys_created_by>
+                <sys_created_on>2016-08-28 08:27:27</sys_created_on>
+                <sys_customer_update>true</sys_customer_update>
+                <sys_id>30c8d5897bad6a0077b1ade93f4d4d8d</sys_id>
+                <sys_mod_count>18</sys_mod_count>
+                <sys_name/>
+                <sys_package display_value="Fantasy Football Draft Picker" source="x_snc_fantasy">a8bcca207b616a00a984804b5e4d4ddf</sys_package>
+                <sys_policy/>
+                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                <sys_scope display_value="Fantasy Football Draft Picker">a8bcca207b616a00a984804b5e4d4ddf</sys_scope>
+                <sys_update_name>sys_grid_canvas_pane_30c8d5897bad6a0077b1ade93f4d4d8d</sys_update_name>
+                <sys_updated_by>alex</sys_updated_by>
+                <sys_updated_on>2016-08-29 02:29:51</sys_updated_on>
+                <width>2</width>
+            </sys_grid_canvas_pane>
+            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                <grid_canvas display_value="PA New Tab 1">6cf655497bad6a0077b1ade93f4d4d72</grid_canvas>
+                <height>18</height>
+                <portal_widget display_value="Created 2016-08-28 04:34:55">5a7a15c97bad6a0077b1ade93f4d4dc1</portal_widget>
+                <posx>0</posx>
+                <posy>0</posy>
+                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                <sys_created_by>alex</sys_created_by>
+                <sys_created_on>2016-08-28 08:34:56</sys_created_on>
+                <sys_customer_update>true</sys_customer_update>
+                <sys_id>527a15c97bad6a0077b1ade93f4d4dc3</sys_id>
+                <sys_mod_count>20</sys_mod_count>
+                <sys_name/>
+                <sys_package display_value="Fantasy Football Draft Picker" source="x_snc_fantasy">a8bcca207b616a00a984804b5e4d4ddf</sys_package>
+                <sys_policy/>
+                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                <sys_scope display_value="Fantasy Football Draft Picker">a8bcca207b616a00a984804b5e4d4ddf</sys_scope>
+                <sys_update_name>sys_grid_canvas_pane_527a15c97bad6a0077b1ade93f4d4dc3</sys_update_name>
+                <sys_updated_by>alex</sys_updated_by>
+                <sys_updated_on>2016-08-29 02:29:58</sys_updated_on>
+                <width>5</width>
+            </sys_grid_canvas_pane>
+            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                <grid_canvas display_value="PA New Tab 1">6cf655497bad6a0077b1ade93f4d4d72</grid_canvas>
+                <height>13</height>
+                <portal_widget display_value="Created 2016-08-28 22:29:47">9b70d15d7ba1aa00a984804b5e4d4dca</portal_widget>
+                <posx>2</posx>
+                <posy>18</posy>
+                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                <sys_created_by>alex</sys_created_by>
+                <sys_created_on>2016-08-29 02:29:47</sys_created_on>
+                <sys_customer_update>true</sys_customer_update>
+                <sys_id>5f70d95d7ba1aa00a984804b5e4d4d6c</sys_id>
+                <sys_mod_count>7</sys_mod_count>
+                <sys_name/>
+                <sys_package display_value="Fantasy Football Draft Picker" source="x_snc_fantasy">a8bcca207b616a00a984804b5e4d4ddf</sys_package>
+                <sys_policy/>
+                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                <sys_scope display_value="Fantasy Football Draft Picker">a8bcca207b616a00a984804b5e4d4ddf</sys_scope>
+                <sys_update_name>sys_grid_canvas_pane_5f70d95d7ba1aa00a984804b5e4d4d6c</sys_update_name>
+                <sys_updated_by>alex</sys_updated_by>
+                <sys_updated_on>2016-08-29 02:30:40</sys_updated_on>
+                <width>6</width>
+            </sys_grid_canvas_pane>
+            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                <grid_canvas display_value="PA New Tab 1">6cf655497bad6a0077b1ade93f4d4d72</grid_canvas>
+                <height>13</height>
+                <portal_widget display_value="Created 2016-08-28 04:35:06">708a55c97bad6a0077b1ade93f4d4d32</portal_widget>
+                <posx>0</posx>
+                <posy>18</posy>
+                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                <sys_created_by>alex</sys_created_by>
+                <sys_created_on>2016-08-28 08:35:06</sys_created_on>
+                <sys_customer_update>true</sys_customer_update>
+                <sys_id>788a55c97bad6a0077b1ade93f4d4d33</sys_id>
+                <sys_mod_count>20</sys_mod_count>
+                <sys_name/>
+                <sys_package display_value="Fantasy Football Draft Picker" source="x_snc_fantasy">a8bcca207b616a00a984804b5e4d4ddf</sys_package>
+                <sys_policy/>
+                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                <sys_scope display_value="Fantasy Football Draft Picker">a8bcca207b616a00a984804b5e4d4ddf</sys_scope>
+                <sys_update_name>sys_grid_canvas_pane_788a55c97bad6a0077b1ade93f4d4d33</sys_update_name>
+                <sys_updated_by>alex</sys_updated_by>
+                <sys_updated_on>2016-08-29 02:30:47</sys_updated_on>
+                <width>2</width>
+            </sys_grid_canvas_pane>
+            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                <grid_canvas display_value="PA New Tab 1">6cf655497bad6a0077b1ade93f4d4d72</grid_canvas>
+                <height>18</height>
+                <portal_widget display_value="Created 2016-08-28 04:35:02">b77ad1c97bad6a0077b1ade93f4d4dd1</portal_widget>
+                <posx>5</posx>
+                <posy>0</posy>
+                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                <sys_created_by>alex</sys_created_by>
+                <sys_created_on>2016-08-28 08:35:02</sys_created_on>
+                <sys_customer_update>true</sys_customer_update>
+                <sys_id>7f7a55c97bad6a0077b1ade93f4d4dd0</sys_id>
+                <sys_mod_count>19</sys_mod_count>
+                <sys_name/>
+                <sys_package display_value="Fantasy Football Draft Picker" source="x_snc_fantasy">a8bcca207b616a00a984804b5e4d4ddf</sys_package>
+                <sys_policy/>
+                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                <sys_scope display_value="Fantasy Football Draft Picker">a8bcca207b616a00a984804b5e4d4ddf</sys_scope>
+                <sys_update_name>sys_grid_canvas_pane_7f7a55c97bad6a0077b1ade93f4d4dd0</sys_update_name>
+                <sys_updated_by>alex</sys_updated_by>
+                <sys_updated_on>2016-08-29 02:30:01</sys_updated_on>
+                <width>5</width>
+            </sys_grid_canvas_pane>
+            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                <grid_canvas display_value="PA New Tab 1">6cf655497bad6a0077b1ade93f4d4d72</grid_canvas>
+                <height>4</height>
+                <portal_widget display_value="Created 2016-08-28 04:27:10">a8b8d5897bad6a0077b1ade93f4d4d88</portal_widget>
+                <posx>10</posx>
+                <posy>3</posy>
+                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                <sys_created_by>alex</sys_created_by>
+                <sys_created_on>2016-08-28 08:27:10</sys_created_on>
+                <sys_customer_update>true</sys_customer_update>
+                <sys_id>a0b8d5897bad6a0077b1ade93f4d4d8a</sys_id>
+                <sys_mod_count>24</sys_mod_count>
+                <sys_name/>
+                <sys_package display_value="Fantasy Football Draft Picker" source="x_snc_fantasy">a8bcca207b616a00a984804b5e4d4ddf</sys_package>
+                <sys_policy/>
+                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                <sys_scope display_value="Fantasy Football Draft Picker">a8bcca207b616a00a984804b5e4d4ddf</sys_scope>
+                <sys_update_name>sys_grid_canvas_pane_a0b8d5897bad6a0077b1ade93f4d4d8a</sys_update_name>
+                <sys_updated_by>alex</sys_updated_by>
+                <sys_updated_on>2016-08-29 02:29:51</sys_updated_on>
+                <width>2</width>
+            </sys_grid_canvas_pane>
+            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                <grid_canvas display_value="PA New Tab 1">6cf655497bad6a0077b1ade93f4d4d72</grid_canvas>
+                <height>4</height>
+                <portal_widget display_value="Created 2016-08-28 04:27:03">b6a895897bad6a0077b1ade93f4d4d92</portal_widget>
+                <posx>10</posx>
+                <posy>7</posy>
+                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                <sys_created_by>alex</sys_created_by>
+                <sys_created_on>2016-08-28 08:27:03</sys_created_on>
+                <sys_customer_update>true</sys_customer_update>
+                <sys_id>bea895897bad6a0077b1ade93f4d4d93</sys_id>
+                <sys_mod_count>29</sys_mod_count>
+                <sys_name/>
+                <sys_package display_value="Fantasy Football Draft Picker" source="x_snc_fantasy">a8bcca207b616a00a984804b5e4d4ddf</sys_package>
+                <sys_policy/>
+                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                <sys_scope display_value="Fantasy Football Draft Picker">a8bcca207b616a00a984804b5e4d4ddf</sys_scope>
+                <sys_update_name>sys_grid_canvas_pane_bea895897bad6a0077b1ade93f4d4d93</sys_update_name>
+                <sys_updated_by>alex</sys_updated_by>
+                <sys_updated_on>2016-08-29 02:29:51</sys_updated_on>
+                <width>2</width>
+            </sys_grid_canvas_pane>
+            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                <grid_canvas display_value="PA New Tab 1">6cf655497bad6a0077b1ade93f4d4d72</grid_canvas>
+                <height>16</height>
+                <portal_widget display_value="Created 2016-08-28 04:27:07">b7a895897bad6a0077b1ade93f4d4db5</portal_widget>
+                <posx>10</posx>
+                <posy>11</posy>
+                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                <sys_created_by>alex</sys_created_by>
+                <sys_created_on>2016-08-28 08:27:07</sys_created_on>
+                <sys_customer_update>true</sys_customer_update>
+                <sys_id>bfa895897bad6a0077b1ade93f4d4db6</sys_id>
+                <sys_mod_count>35</sys_mod_count>
+                <sys_name/>
+                <sys_package display_value="Fantasy Football Draft Picker" source="x_snc_fantasy">a8bcca207b616a00a984804b5e4d4ddf</sys_package>
+                <sys_policy/>
+                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                <sys_scope display_value="Fantasy Football Draft Picker">a8bcca207b616a00a984804b5e4d4ddf</sys_scope>
+                <sys_update_name>sys_grid_canvas_pane_bfa895897bad6a0077b1ade93f4d4db6</sys_update_name>
+                <sys_updated_by>alex</sys_updated_by>
+                <sys_updated_on>2016-08-29 02:55:35</sys_updated_on>
+                <width>2</width>
+            </sys_grid_canvas_pane>
+        </related_items_node>
+    </sys_grid_canvas>
+</record_update>

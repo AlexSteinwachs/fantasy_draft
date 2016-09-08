@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_instance_menu">
+    <sp_instance_menu action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <short_description/>
+        <size>md</size>
+        <sp_column/>
+        <sp_widget/>
+        <sys_class_name>sp_instance_menu</sys_class_name>
+        <sys_created_by>alex</sys_created_by>
+        <sys_created_on>2016-08-28 08:56:22</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>d65f9d4d7bad6a0077b1ade93f4d4d43</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Fantasy Football</sys_name>
+        <sys_package display_value="Fantasy Football Draft Picker" source="x_snc_fantasy">a8bcca207b616a00a984804b5e4d4ddf</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Fantasy Football Draft Picker">a8bcca207b616a00a984804b5e4d4ddf</sys_scope>
+        <sys_update_name>sp_instance_menu_d65f9d4d7bad6a0077b1ade93f4d4d43</sys_update_name>
+        <sys_updated_by>alex</sys_updated_by>
+        <sys_updated_on>2016-08-28 08:56:22</sys_updated_on>
+        <title>Fantasy Football</title>
+        <url/>
+        <widget_parameters/>
+    </sp_instance_menu>
+</record_update>

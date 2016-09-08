@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_grid_canvas_pane">
+    <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+        <grid_canvas display_value="PA New Tab 1">6cf655497bad6a0077b1ade93f4d4d72</grid_canvas>
+        <height>18</height>
+        <portal_widget display_value="Created 2016-08-28 04:34:55">5a7a15c97bad6a0077b1ade93f4d4dc1</portal_widget>
+        <posx>0</posx>
+        <posy>0</posy>
+        <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+        <sys_created_by>alex</sys_created_by>
+        <sys_created_on>2016-08-28 08:34:56</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>527a15c97bad6a0077b1ade93f4d4dc3</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Fantasy Football Draft Picker" source="x_snc_fantasy">a8bcca207b616a00a984804b5e4d4ddf</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Fantasy Football Draft Picker">a8bcca207b616a00a984804b5e4d4ddf</sys_scope>
+        <sys_update_name>sys_grid_canvas_pane_527a15c97bad6a0077b1ade93f4d4dc3</sys_update_name>
+        <sys_updated_by>alex</sys_updated_by>
+        <sys_updated_on>2016-08-29 02:29:58</sys_updated_on>
+        <width>5</width>
+    </sys_grid_canvas_pane>
+</record_update>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Owners" max_length="40" name="x_snc_fantasy_owners" type="collection">
+        <element choice="1" label="Division" max_length="40" name="division" type="choice">
+            <choice>
+                <element label="Clubs" value="Clubs"/>
+                <element label="Diamonds" value="Diamonds"/>
+                <element label="Hearts" value="Hearts"/>
+                <element label="Spades" value="Spades"/>
+            </choice>
+        </element>
+        <element display="true" label="Owner Name" max_length="40" name="owner_name" type="string"/>
+        <element label="Team Abbreviation" max_length="40" name="team_abbreviation" type="string"/>
+        <element label="Team Name" max_length="40" name="team_name" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="pa_tabs">
+    <pa_tabs action="INSERT_OR_UPDATE">
+        <canvas_page display_value="PA New Tab 1">6cf655497bad6a0077b1ade93f4d4d72</canvas_page>
+        <name>New Tab 1</name>
+        <page display_value="PA New Tab 1">28f655497bad6a0077b1ade93f4d4d72</page>
+        <sys_class_name>pa_tabs</sys_class_name>
+        <sys_created_by>alex</sys_created_by>
+        <sys_created_on>2016-08-28 08:19:31</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>60f655497bad6a0077b1ade93f4d4d73</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New Tab 1</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Fantasy Football Draft Picker" source="x_snc_fantasy">a8bcca207b616a00a984804b5e4d4ddf</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Fantasy Football Draft Picker">a8bcca207b616a00a984804b5e4d4ddf</sys_scope>
+        <sys_update_name>pa_tabs_60f655497bad6a0077b1ade93f4d4d73</sys_update_name>
+        <sys_updated_by>alex</sys_updated_by>
+        <sys_updated_on>2016-08-28 08:19:31</sys_updated_on>
+    </pa_tabs>
+</record_update>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_transform_map">
+    <sys_transform_map action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copy_empty_fields>false</copy_empty_fields>
+        <enforce_mandatory_fields>No</enforce_mandatory_fields>
+        <map_ecc_queue_payload>false</map_ecc_queue_payload>
+        <name>u_imp_tmpl_x_snc_fantasy_teams</name>
+        <order>100</order>
+        <run_business_rules>true</run_business_rules>
+        <run_script>false</run_script>
+        <script><![CDATA[(function transformRow(source, target, map, log, isUpdate) {
+
+	// Add your code here
+
+})(source, target, map, log, action==="update");]]></script>
+        <source>u_imp_tmpl_x_snc_fantasy_teams</source>
+        <source_table>u_imp_tmpl_x_snc_fantasy_teams</source_table>
+        <sys_class_name>sys_transform_map</sys_class_name>
+        <sys_created_by>alex</sys_created_by>
+        <sys_created_on>2016-08-27 15:47:33</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>e1e375387ba56a0077b1ade93f4d4dcd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_imp_tmpl_x_snc_fantasy_teams</sys_name>
+        <sys_package display_value="Fantasy Football Draft Picker" source="x_snc_fantasy">a8bcca207b616a00a984804b5e4d4ddf</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Fantasy Football Draft Picker">a8bcca207b616a00a984804b5e4d4ddf</sys_scope>
+        <sys_update_name>sys_transform_map_e1e375387ba56a0077b1ade93f4d4dcd</sys_update_name>
+        <sys_updated_by>alex</sys_updated_by>
+        <sys_updated_on>2016-08-27 15:47:33</sys_updated_on>
+        <target_table>x_snc_fantasy_teams</target_table>
+        <xml_root_node/>
+    </sys_transform_map>
+</record_update>

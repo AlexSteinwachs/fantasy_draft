@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <client_script><![CDATA[function($scope, spUtil) {
+  
+	var c = this;
+	c.create = function() {
+		c.server.update().then(function() {
+			spUtil.addTrivialMessage('Created!');
+		});
+		c.data.action = "create";
+	}
+	
+	c.continueDraft = function(number) {
+		c.data.target = number;
+		c.server.update().then(function() {
+			spUtil.addTrivialMessage('Starting Draft ' + number);
+		});
+		c.data.action = "continueDraft";
+		
+	}
+		c.endDraft = function(number) {
+		c.data.endDraft = number;
+		c.server.update().then(function() {
+		});
+		c.data.action = "endDraft";
+	}	
+	c.check = function(number) {
+		c.data.target = number;
+		c.server.update().then(function() {
+		});
+		c.data.action = "check";
+	}
+	
+	c.draftPlayer = function(playerName,number) {
+		c.data.draftedPlayer = playerName;
+		c.data.draftNumber = number;
+		c.server.update().then(function() {
+			spUtil.addTrivialMessage(c.data.draftResults);
+		});
+		c.data.action = "draftPlayer";
+	}
+	
+	c.viewDraft = function(number) {
+		c.data.view = number;
+		c.server.update().then(function() {
+			spUtil.addTrivialMessage('Viewing Draft ' + number);
+		});
+		c.data.action = "viewDraft";
+		
+	}
+		c.newOwner = function(owner,number) {
+		c.data.newOwner = owner;
+		c.data.draftNumber = number;
+		c.server.update().then(function() {
+		});
+		c.data.action = "newOwner";
+	}
+	c.returnPlayer = function(player,number) {
+		c.data.returnPlayer = player;
+		c.data.draftNumber = number;
+		c.server.update().then(function() {
+		});
+		c.data.action = "returnPlayer";
+	}
+}
+
+
+
+
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.tier_button {
+      background-color: rgb(150,150,{{player);
+    border: none;
+    color: white;
+        }</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>draft-picker</id>
+        <internal>false</internal>
+        <link/>
+        <name>Draft Picker</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[
+(function findDrafts() {
+	//finds all the current drafts and returns them to the drafts array
+data.drafts = [];
+var d = new GlideRecord('x_snc_fantasy_draft');
+	d.addQuery('state', 'IN', 'Ready,Initializing,Drafting');
+	d.query();
+	while (d.next()) {
+		var draft_array = {
+			'number' : d.getValue('number'),
+			'state' : d.getValue('state')
+		};
+		data.drafts.push(draft_array);
+	}
+
+if (data.draft_number == undefined || data.draft_number == null) {
+	data.draft_number = false;
+} 
+	
+})();
+
+(function getOwners() {
+	var o = new GlideRecord('x_snc_fantasy_owners');
+	o.query();
+	data.owners = [];
+	while (o.next()) {
+		var owners_array = {
+		'id' : o.getValue('sys_id'),
+		'name' : o.getValue('owner_name')
+		};
+		data.owners.push(owners_array);
+	}
+})();
+
+(function actions() {
+	// Used for different draft actions
+	if (typeof input != "undefined") {
+		if (input.action == "create") {
+			var cd = new GlideRecord('x_snc_fantasy_draft');
+			cd.insert();
+			var cd_array = {
+				'number' : cd.getValue('number'),
+				'state' : cd.getValue('state')
+			};
+			data.drafts.push(cd_array);
+		}
+		else if (input.action == "endDraft") {
+			var ed = new GlideRecord('x_snc_fantasy_draft');
+			ed.addQuery('number', input.endDraft);
+			ed.query();
+			while (ed.next()) {
+				ed.state='Complete';
+				ed.update();
+			}
+			data.drafts = [];
+			var end = new GlideRecord('x_snc_fantasy_draft');
+				end.addQuery('state', 'IN', 'Ready,Initializing,Drafting');
+				end.query();
+				while (end.next()) {
+				var end_draft_array = {
+					'number' : end.getValue('number'),
+					'state' : end.getValue('state')
+				};
+			data.drafts.push(end_draft_array);
+	}
+			data.draft_number = null;
+		}
+		else if (input.action == "continueDraft") {
+			var cD = new GlideRecord('x_snc_fantasy_draft');
+			cD.addQuery('number', input.target);
+			cD.query();
+			data.draft_number = input.target;
+		}
+		else if (input.action == "viewDraft") {
+			var vD = new GlideRecord('x_snc_fantasy_draft');
+			vD.addQuery('number', input.view);
+			vD.query();
+			data.draft_number = input.view;
+		}
+		else if (input.action == "start") {
+		  var s = new GlideRecord('x_snc_fantasy_draft');
+			s.addQuery('number', input.target);
+			s.query();
+			
+		}
+		else if (input.action == "newOwner") {
+			data.currentOwner = input.newOwner;
+			data.draft_number=input.draftNumber;
+			findPlayers();
+
+		}
+		else if (input.action == "check") {
+			var i = new GlideRecord('x_snc_fantasy_draft');
+			i.addQuery('number', input.target);
+			i.query();
+
+		}		
+		else if (input.action == "draftPlayer") {
+			var pi = new GlideRecord('x_snc_fantasy_draft_pick');
+			pi.addQuery('draft.number', input.draftNumber);
+			pi.addQuery('player.name', input.draftedPlayer);
+			pi.query();
+			while (pi.next()){
+			data.test=pi.player.getDisplayValue();
+			pi.owner= input.selectedOwner;
+			pi.update();
+			data.draft_number=input.draftNumber;
+			//data.draftResults=pi.owner.name+' successfully drafted '+ pi.player.name;
+			}
+		}	
+		else if (input.action == "returnPlayer") {
+			var rpi = new GlideRecord('x_snc_fantasy_draft_pick');
+			rpi.addQuery('draft.number', input.draftNumber);
+			rpi.addQuery('player.name', input.returnPlayer);
+			rpi.query();
+			while (rpi.next()){
+			rpi.owner= '';
+			rpi.update();
+			data.draft_number=input.draftNumber;
+			//data.draftResults=pi.owner.name+' successfully drafted '+ pi.player.name;
+			}
+		}	
+	}
+})();
+
+(function findPlayers() {
+	//finds all the players in the current draft and returns them to the players array
+	data.players = [];
+	var p = new GlideRecord('x_snc_fantasy_draft_pick');
+	p.addQuery('draft.number', data.draft_number);
+	p.addQuery('owner', '');
+	p.query();
+	while (p.next()) {
+		var player_array = {
+			'name' : p.getDisplayValue('player'),
+			'position' : p.player.position.getDisplayValue(),
+			'team' : p.player.team.name.getDisplayValue(),
+			'logo' : p.player.team.logo.getDisplayValue(),
+			'adp' : p.player.adp.getDisplayValue(),
+			'rank' : p.player.rank.getDisplayValue(),
+			'best_rank' : p.player.best_rank.getDisplayValue(),
+			'worst_rank' : p.player.worst_rank.getDisplayValue(),
+			'avg_rank' : p.player.avg_rank.getDisplayValue(),
+			'bye' : p.player.team.bye_week.getDisplayValue(),
+			'tier' : 0
+		};
+		player_array.adp = parseInt(player_array.adp);
+		player_array.avg_rank = parseInt(player_array.avg_rank);
+		
+		player_array.tier=Math.ceil((player_array.adp / 12));
+
+		if (player_array.position == 'K') {
+			player_array.position = 'KICK';
+		}
+		if (player_array.position == 'TE') {
+			player_array.position = 'WR/TE';
+		}		
+		data.players.push(player_array);
+	}
+
+})();
+
+(function viewPlayers() {
+	//finds all the players in the current draft and returns them to the players array
+	data.vplayers = [];
+	var pv = new GlideRecord('x_snc_fantasy_draft_pick');
+	pv.addQuery('draft.number', data.draft_number);
+	pv.addQuery('owner', '!=', '');
+	pv.query();
+	while (pv.next()) {
+		var vplayer_array = {
+			'name' : pv.getDisplayValue('player'),
+			'position' : pv.player.position.getDisplayValue(),
+			'team' : pv.player.team.name.getDisplayValue(),
+			'logo' : pv.player.team.logo.getDisplayValue(),
+			'adp' : pv.player.adp.getDisplayValue(),
+			'rank' : pv.player.rank.getDisplayValue(),
+			'best_rank' : pv.player.best_rank.getDisplayValue(),
+			'worst_rank' : pv.player.worst_rank.getDisplayValue(),
+			'avg_rank' : pv.player.avg_rank.getDisplayValue(),
+			'bye' : pv.player.team.bye_week.getDisplayValue(),
+			'owner' : pv.owner.owner_name.getDisplayValue()
+		};
+		vplayer_array.adp = parseInt(vplayer_array.adp);
+		vplayer_array.avg_rank = parseInt(vplayer_array.avg_rank);
+			
+		if (vplayer_array.position == 'K') {
+			vplayer_array.position = 'KICK';
+		}
+		if (vplayer_array.position == 'TE') {
+			vplayer_array.position = 'WR/TE';
+		}		
+		data.vplayers.push(vplayer_array);
+	}
+
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>alex</sys_created_by>
+        <sys_created_on>2016-08-27 17:30:21</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>e76bcab47be56a0077b1ade93f4d4d54</sys_id>
+        <sys_mod_count>393</sys_mod_count>
+        <sys_name>Draft Picker</sys_name>
+        <sys_package display_value="Fantasy Football Draft Picker" source="x_snc_fantasy">a8bcca207b616a00a984804b5e4d4ddf</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Fantasy Football Draft Picker">a8bcca207b616a00a984804b5e4d4ddf</sys_scope>
+        <sys_update_name>sp_widget_e76bcab47be56a0077b1ade93f4d4d54</sys_update_name>
+        <sys_updated_by>alex</sys_updated_by>
+        <sys_updated_on>2016-08-29 03:31:01</sys_updated_on>
+        <template><![CDATA[<div ng-hide="data.draft_number">
+  <div class="panel-heading">
+    <h2 >${Current Drafts}</h2>
+  </div>
+  <div class="panel-body">
+    <div ng-if="data.drafts.length == 0">
+      ${You have no current drafts}
+    </div>
+    <div ng-if="data.drafts.length > 0" ng-repeat="drafts in data.drafts| orderBy:'number'">
+      <br>
+      <div class="container">
+      	<div class="col-xs-6"><button ng-click="c.continueDraft(drafts.number)" ng-if="drafts.state == 'Drafting'" class="btn btn-success btn-block" style="border-width:1px;">${Start }{{drafts.number}}</button></div>
+      	<div class="col-xs-6"><button ng-click="c.viewDraft(drafts.number)" ng-if="drafts.state == 'Drafting'" class="btn btn-info btn-block" style="border-width:1px;">${View }{{drafts.number}}</button></div>
+      	<button ng-click="c.check(drafts.number)" ng-if="drafts.state == 'Initializing'" class="btn btn-warning btn-block" style="border-width:1px;">${Initializing }{{drafts.number}}</button>
+      </div>
+    </div>
+    <div class="container">
+      <br>
+      <button name="create" ng-click="c.create()" class="btn btn-danger btn-block col-xs-10" style="border-width:1px;">${Create a New Draft}</button>
+    </div>
+
+  </div>
+</div>
+
+
+<div>
+  <div ng-show="data.draft_number && !data.view">
+    
+    <div class="container-fluid">  
+      <div class="col-xs-6"><input type="search" class="form-control" ng-model="q" placeholder="filter players..." /></div>
+      <div class="col-xs-6"><form>
+				<select name="repeatSelect" id="repeatSelect" ng-model="data.selectedOwner" ng-change="newOwner(data.selectedOwner,data.draft_number)">
+        	<option ng-repeat="option in data.owners" value={{option.id}}>{{option.name}}</option>
+        </select></form>
+      </div>
+    </div>
+    <div class="container" >
+        <div class="row">
+          <div class="col-xs-3"><strong>${ADP}</strong> (${Tier})<p><span class="text-success">Best</span>/<span class="text-info">${Avg}</span>/<span class="text-danger">${Worst}</span></div> 
+       		<div class="col-xs-2">${Name}</div>
+      		<div class="col-xs-2">${Position} (${Owned})</div>
+          <div class="col-xs-1">${Bye} (${Owned})</div>
+       		<div class="col-xs-2">${Team}</div>
+					<div class="col-xs-2">${Draft}</div>
+      </div>
+    </div>
+    <div class="container" >
+        <div class="row" ng-repeat="players in data.players| orderBy: 'adp'| filter:q as results">
+          <div class="col-xs-2"><strong>{{players.adp}}</strong> ({{players.tier}})<p><span class="text-success">{{players.best_rank}}</span>/<span class="text-info">{{players.avg_rank}}</span>/<span class="text-danger">{{players.worst_rank}}</span></div> 
+       		<div class="col-xs-2">{{players.name}}</div>
+      		<div class="col-xs-2">{{players.position}}</div>
+          <div class="col-xs-1">{{players.bye}}</div>
+       		<div class="col-xs-2"><img class="img-responsive" ng-src="{{players.logo}}" /></div>
+					<div class="col-xs-3"><button ng-click="c.draftPlayer(players.name,data.draft_number,data.selectedOwner)" class="btn btn-success btn-block">${Draft}</button></div>
+      </div>
+    </div> 
+
+</div>
+</div>
+
+<div>
+  <div ng-show="data.draft_number && data.view">
+    
+    <div class="container">  
+      <input type="search" class="form-control" ng-model="q" placeholder="filter players..." />
+    </div>
+    <div class="container" >
+        <div class="row" ng-repeat="players in data.vplayers| orderBy: 'owner'| filter:q as results">
+        	<div class="col-xs-3">{{players.owner}}</div> 
+       		<div class="col-xs-2">{{players.name}}</div>
+      		<div class="col-xs-1">{{players.position}}</div>
+          <div class="col-xs-1">{{players.bye}}</div>
+       		<div class="col-xs-2"><img class="img-responsive" ng-src="{{players.logo}}" /></div>
+					<div class="col-xs-3"><button ng-click="c.returnPlayer(players.name,data.draft_number)" class="btn btn-danger btn-block">${Return}</button></div>
+      </div>
+    </div>
+  <div>
+    <button ng-click="c.endDraft(data.draft_number)" class="btn btn-danger btn-block" style="border-width:1px;">${End Draft}{{data.draft_number}}</button>
+</div>
+</div>
+</div>]]></template>
+    </sp_widget>
+</record_update>
