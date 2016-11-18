@@ -232,13 +232,38 @@ if (data.draft_number == undefined || data.draft_number == null) {
 			'worst_rank' : p.player.worst_rank.getDisplayValue(),
 			'avg_rank' : p.player.avg_rank.getDisplayValue(),
 			'bye' : p.player.team.bye_week.getDisplayValue(),
-			'tier' : 0
+			'sum_position' : 0,
+			'sum_bye' : 0,
+			'tier' : 0,
+			'tier_color':0,
+			'tier_stars': ''
 		};
 		player_array.adp = parseInt(player_array.adp);
 		player_array.avg_rank = parseInt(player_array.avg_rank);
+
+		player_array.tier_color = (255-(20* Math.ceil((player_array.adp / 12))));
 		
 		player_array.tier=Math.ceil((player_array.adp / 12));
 
+		
+		var checkPosition = new GlideRecord('x_snc_fantasy_draft_pick');
+			checkPosition.addQuery('draft.number', data.draft_number);
+			checkPosition.addQuery('owner.owner_name', 'Alex Steinwachs')
+			checkPosition.addQuery('player.position', player_array.position)
+			checkPosition.query();
+			while (checkPosition.next()) {
+				player_array.sum_position = player_array.sum_position + 1;
+			}
+		
+			var checkBye = new GlideRecord('x_snc_fantasy_draft_pick');
+			checkBye.addQuery('draft.number', data.draft_number);
+			checkBye.addQuery('owner.owner_name', 'Alex Steinwachs')
+			checkBye.addQuery('player.team.bye_week', player_array.bye)
+			checkBye.query();
+			while (checkBye.next()) {
+				player_array.sum_bye = player_array.sum_bye + 1;
+			}
+			
 		if (player_array.position == 'K') {
 			player_array.position = 'KICK';
 		}
@@ -255,7 +280,7 @@ if (data.draft_number == undefined || data.draft_number == null) {
 	data.vplayers = [];
 	var pv = new GlideRecord('x_snc_fantasy_draft_pick');
 	pv.addQuery('draft.number', data.draft_number);
-	pv.addQuery('owner', '!=', '');
+	pv.addQuery('owner', '!=', '')
 	pv.query();
 	while (pv.next()) {
 		var vplayer_array = {
@@ -269,10 +294,30 @@ if (data.draft_number == undefined || data.draft_number == null) {
 			'worst_rank' : pv.player.worst_rank.getDisplayValue(),
 			'avg_rank' : pv.player.avg_rank.getDisplayValue(),
 			'bye' : pv.player.team.bye_week.getDisplayValue(),
-			'owner' : pv.owner.owner_name.getDisplayValue()
+			'owner' : pv.owner.owner_name.getDisplayValue(),
+			'sum_position' : 0,
+			'sum_bye' : 0
 		};
 		vplayer_array.adp = parseInt(vplayer_array.adp);
 		vplayer_array.avg_rank = parseInt(vplayer_array.avg_rank);
+
+		var vcheckPosition = new GlideRecord('x_snc_fantasy_draft_pick');
+			vcheckPosition.addQuery('draft.number', data.draft_number);
+			vcheckPosition.addQuery('owner.owner_name', 'Alex Steinwachs')
+			vcheckPosition.addQuery('player.position', vplayer_array.position)
+			vcheckPosition.query();
+			while (vcheckPosition.next()) {
+				vplayer_array.sum_position = vplayer_array.sum_position + 1;
+			}
+		
+			var vcheckBye = new GlideRecord('x_snc_fantasy_draft_pick');
+			vcheckBye.addQuery('draft.number', data.draft_number);
+			vcheckBye.addQuery('owner.owner_name', 'Alex Steinwachs')
+			vcheckBye.addQuery('player.team.bye_week', vplayer_array.bye)
+			vcheckBye.query();
+			while (vcheckBye.next()) {
+				vplayer_array.sum_bye = vplayer_array.sum_bye + 1;
+			}
 			
 		if (vplayer_array.position == 'K') {
 			vplayer_array.position = 'KICK';
@@ -291,7 +336,7 @@ if (data.draft_number == undefined || data.draft_number == null) {
         <sys_created_on>2016-08-27 17:30:21</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>e76bcab47be56a0077b1ade93f4d4d54</sys_id>
-        <sys_mod_count>393</sys_mod_count>
+        <sys_mod_count>398</sys_mod_count>
         <sys_name>Draft Picker</sys_name>
         <sys_package display_value="Fantasy Football Draft Picker" source="x_snc_fantasy">a8bcca207b616a00a984804b5e4d4ddf</sys_package>
         <sys_policy/>
@@ -299,7 +344,7 @@ if (data.draft_number == undefined || data.draft_number == null) {
         <sys_scope display_value="Fantasy Football Draft Picker">a8bcca207b616a00a984804b5e4d4ddf</sys_scope>
         <sys_update_name>sp_widget_e76bcab47be56a0077b1ade93f4d4d54</sys_update_name>
         <sys_updated_by>alex</sys_updated_by>
-        <sys_updated_on>2016-08-29 03:31:01</sys_updated_on>
+        <sys_updated_on>2016-11-09 00:12:28</sys_updated_on>
         <template><![CDATA[<div ng-hide="data.draft_number">
   <div class="panel-heading">
     <h2 >${Current Drafts}</h2>
@@ -338,20 +383,20 @@ if (data.draft_number == undefined || data.draft_number == null) {
     </div>
     <div class="container" >
         <div class="row">
-          <div class="col-xs-3"><strong>${ADP}</strong> (${Tier})<p><span class="text-success">Best</span>/<span class="text-info">${Avg}</span>/<span class="text-danger">${Worst}</span></div> 
+          <div class="col-xs-2"><strong>${ADP}</strong> (${Tier})<p><span class="text-success">B</span>/<span class="text-info">${Avg}</span>/<span class="text-danger">${W}</span></div> 
        		<div class="col-xs-2">${Name}</div>
-      		<div class="col-xs-2">${Position} (${Owned})</div>
-          <div class="col-xs-1">${Bye} (${Owned})</div>
+      		<div class="col-xs-2">${Position} (${Own})</div>
+          <div class="col-xs-1">${Bye} (${Own})</div>
        		<div class="col-xs-2">${Team}</div>
-					<div class="col-xs-2">${Draft}</div>
+					<div class="col-xs-3">${Draft}</div>
       </div>
     </div>
     <div class="container" >
-        <div class="row" ng-repeat="players in data.players| orderBy: 'adp'| filter:q as results">
+        <div class="row" ng-repeat="players in data.players| orderBy: 'adp'|filter:q as results">
           <div class="col-xs-2"><strong>{{players.adp}}</strong> ({{players.tier}})<p><span class="text-success">{{players.best_rank}}</span>/<span class="text-info">{{players.avg_rank}}</span>/<span class="text-danger">{{players.worst_rank}}</span></div> 
        		<div class="col-xs-2">{{players.name}}</div>
-      		<div class="col-xs-2">{{players.position}}</div>
-          <div class="col-xs-1">{{players.bye}}</div>
+      		<div class="col-xs-2">{{players.position}} ({{players.sum_position}})</div>
+          <div class="col-xs-1">{{players.bye}} ({{players.sum_bye}})</div>
        		<div class="col-xs-2"><img class="img-responsive" ng-src="{{players.logo}}" /></div>
 					<div class="col-xs-3"><button ng-click="c.draftPlayer(players.name,data.draft_number,data.selectedOwner)" class="btn btn-success btn-block">${Draft}</button></div>
       </div>
@@ -370,8 +415,8 @@ if (data.draft_number == undefined || data.draft_number == null) {
         <div class="row" ng-repeat="players in data.vplayers| orderBy: 'owner'| filter:q as results">
         	<div class="col-xs-3">{{players.owner}}</div> 
        		<div class="col-xs-2">{{players.name}}</div>
-      		<div class="col-xs-1">{{players.position}}</div>
-          <div class="col-xs-1">{{players.bye}}</div>
+      		<div class="col-xs-1">{{players.position}} ({{players.sum_position}})</div>
+          <div class="col-xs-1">{{players.bye}} ({{players.sum_bye}})</div>
        		<div class="col-xs-2"><img class="img-responsive" ng-src="{{players.logo}}" /></div>
 					<div class="col-xs-3"><button ng-click="c.returnPlayer(players.name,data.draft_number)" class="btn btn-danger btn-block">${Return}</button></div>
       </div>

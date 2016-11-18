@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <client_script><![CDATA[function($filter, $location,$rootScope,$scope,$timeout,spUtil) {
+	var c = this;
+	$rootScope.$on('selectedDraftNumber', function(event,data) {
+		$timeout(function(){
+			c.data.draftNumber = data.draftNumber;
+		});
+	});
+		
+	c.create = function() {
+		c.server.update().then(function() {
+			spUtil.addTrivialMessage('Created!');
+		});
+		c.data.action = "create";
+	}
+	
+	c.action = function(action,number) {
+		spUtil.addTrivialMessage('Draft '+action + number);
+		var draftArray = {
+			draftNumber : number,
+			draftAction : action
+		};
+			$rootScope.$broadcast('selectedDraftNumber', draftArray);
+	}
+
+	spUtil.recordWatch($scope, "x_snc_fantasy_draft", '', function(name, data) {
+		//If there is a new record we want to re-render our list (which is simply executing the server script again)
+		c.server.update();
+	});
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>ff_draft_picker</id>
+        <internal>false</internal>
+        <link/>
+        <name>FF Draft Picker</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function findDrafts() {
+	//finds all the current drafts and returns them to the drafts array
+	if (data.draftNumber == undefined || data.draftNumber == null) {
+		data.draftNumber = false;
+		data.draftAction = false;
+		data.drafts = [];
+		var d = new GlideRecord('x_snc_fantasy_draft');
+		d.addQuery('state', 'IN', 'Drafting');
+		d.query();
+		while (d.next()) {
+			var draftArray = {};
+			$sp.getRecordDisplayValues(draftArray,d,'number,state');
+			data.drafts.push(draftArray);
+		}
+	}
+})();
+
+(function actions() {
+	// Used for different draft actions
+	if (typeof input != "undefined") {
+		if (input.action == "create") {
+			var cd = new GlideRecord('x_snc_fantasy_draft');
+			cd.insert();
+			var cdArray = {};
+			$sp.getRecordDisplayValues(cdArray,cd,'number,state');
+			data.drafts.push(cdArray);
+			data.action='';
+		}
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>alex</sys_created_by>
+        <sys_created_on>2016-11-07 23:45:42</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>80d31a4c6f072600a3d55f421c3ee4b6</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>FF Draft Picker</sys_name>
+        <sys_package display_value="Fantasy Football Draft Picker" source="x_snc_fantasy">a8bcca207b616a00a984804b5e4d4ddf</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Fantasy Football Draft Picker">a8bcca207b616a00a984804b5e4d4ddf</sys_scope>
+        <sys_update_name>sp_widget_80d31a4c6f072600a3d55f421c3ee4b6</sys_update_name>
+        <sys_updated_by>alex</sys_updated_by>
+        <sys_updated_on>2016-11-09 01:39:27</sys_updated_on>
+        <template><![CDATA[<div ng-hide="data.draftNumber">
+  <div class="panel-heading">
+    <h2 >${Current Drafts}</h2>
+  </div>
+  <div class="panel-body">
+    <div ng-if="data.drafts.length == 0">
+      ${You have no current drafts}
+    </div>
+    <div ng-if="data.drafts.length > 0" ng-repeat="drafts in data.drafts| orderBy:'number'">
+      <br>
+      <div class="container">
+      	<div class="col-xs-6"><button ng-click="c.action('Start',drafts.number)" class="btn btn-success btn-block" style="border-width:1px;">${Start }{{drafts.number}}</button></div>
+      	<div class="col-xs-6"><button ng-click="c.action('View',drafts.number)" class="btn btn-info btn-block" style="border-width:1px;">${View }{{drafts.number}}</button></div>
+      </div>
+    </div>
+    <div class="container">
+      <br>
+      <button name="create" ng-click="c.create()" class="btn btn-danger btn-block col-xs-10" style="border-width:1px;">${Create a New Draft}</button>
+    </div>
+
+  </div>
+</div>
+]]></template>
+    </sp_widget>
+</record_update>

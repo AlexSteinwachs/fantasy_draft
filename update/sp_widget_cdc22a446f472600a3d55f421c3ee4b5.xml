@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <client_script><![CDATA[function($filter, $location,$rootScope,$scope,$timeout,spUtil) {
+	/* widget controller */
+	var c = this;
+	$scope.pageSize = 25;
+
+	$rootScope.$on('selectedDraftNumber', function(event,data) {
+		$timeout(function(){
+			c.data.draftNumber = data.draftNumber;
+			c.data.draftAction = data.draftAction;
+			c.server.update();
+		});
+
+
+	});
+
+
+	c.newOwner = function(owner) {
+		c.data.selectedOwner = owner;
+	}
+
+	c.returnPlayer = function(playerName) {
+		c.data.returnedPlayer = playerName;
+		c.data.action = "returnPlayer";
+		c.server.update().then(function() {
+			spUtil.addTrivialMessage(c.data.draftResults);
+		});
+	}
+
+	c.draftPlayer = function(playerName,number) {
+		c.data.draftedPlayer = playerName;
+		c.data.draftNumber = number;
+		c.data.action = "draftPlayer";
+		c.server.update().then(function() {
+			spUtil.addTrivialMessage(c.data.draftResults);
+		});
+	}
+
+	c.clearDraft = function() {
+		var draftArray = {
+			draftNumber : c.data.draftNumber,
+			draftAction : 'View'
+		};
+		c.server.update().then(function() {
+			c.data.players=[];
+			$rootScope.$broadcast('selectedDraftNumber', draftArray);
+		});
+	}
+	c.showBye = function(bye,name) {
+		c.data.showPositionsList = false;
+		if (c.data.showByeList) {
+			c.data.showByeList = false;
+		} else {
+			c.data.showByeName = name;
+			c.data.showByeList = true;
+			c.data.showBye = bye;
+			c.data.action='showBye'
+			c.server.update();
+		}
+	}
+	c.showPositions = function(position,name) {
+		c.data.showByeList = false;
+		if (c.data.showPositionsList) {
+			c.data.showPositionsList = false;
+		} else {
+			c.data.showPositionsName = name;
+			c.data.showPositionsList = true;
+			c.data.showPositions = position;
+			c.data.action='showPositions'
+			c.server.update();
+		}
+	}
+}
+
+
+
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>ff_start_draft</id>
+        <internal>false</internal>
+        <link/>
+        <name>FF Start Draft</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[if (!input)
+	return;
+
+data.draftNumber=input.draftNumber;
+if (data.draftNumber) {
+	getOwners();
+	loadPlayers();
+} 
+
+
+if (input.action == "draftPlayer") {
+	var pi = new GlideRecord('x_snc_fantasy_draft_pick');
+	pi.addQuery('draft.number', input.draftNumber);
+	pi.addQuery('player.name', input.draftedPlayer);
+	pi.query();
+	while (pi.next()){
+		data.test=pi.player.getDisplayValue();
+		pi.owner= input.selectedOwner;
+		pi.update();
+		data.draft_number=input.draftNumber;
+		data.draftResults=pi.owner.owner_name+' successfully drafted '+ pi.player.name;
+		loadPlayers();
+	}
+}
+
+function getOwners() {
+	var o = new GlideRecord('x_snc_fantasy_owners');
+	o.query();
+	data.owners = [];
+	while (o.next()) {
+		var ownersArray = {};
+		$sp.getRecordDisplayValues(ownersArray,o,'sys_id,owner_name');
+		data.owners.push(ownersArray);
+	}
+}
+
+if (input.action == "returnPlayer") {
+	var rpi = new GlideRecord('x_snc_fantasy_draft_pick');
+	rpi.addQuery('draft.number', input.draftNumber);
+	rpi.addQuery('player.name', input.returnedPlayer);
+	rpi.query();
+	while (rpi.next()){
+		data.draftResults=rpi.owner.owner_name+' successfully dropped '+ rpi.player.name;
+		rpi.owner= '';
+		rpi.update();
+		data.draft_number=input.draftNumber;
+		data.showPositionsList = false;
+		loadPlayers();
+	}
+}	
+
+if (input.action == 'showPositions') {
+	showPlayersInPosition();
+}
+
+if (input.action == 'showBye') {
+	$sp.log('1');
+	showPlayersInBye();
+	$sp.log('2');
+}
+
+function showPlayersInBye() {
+	data.playersBye=[];
+
+	var pp = new GlideRecord('x_snc_fantasy_draft_pick');
+	pp.addQuery('draft.number', data.draftNumber);
+	pp.addQuery('owner', '40938e707be56a0077b1ade93f4d4d28');
+	pp.addQuery('player.team.bye_week', input.showBye);
+	pp.query();
+	while (pp.next()) {
+		var show_player_array = {
+			'name' : pp.getDisplayValue('player'),
+			'position' : pp.player.position.getDisplayValue(),
+			'team' : pp.player.team.name.getDisplayValue(),
+			'logo' : pp.player.team.logo.getDisplayValue(),
+			'adp' : pp.player.adp.getDisplayValue(),
+			'rank' : pp.player.rank.getDisplayValue(),
+			'best_rank' : pp.player.best_rank.getDisplayValue(),
+			'worst_rank' : pp.player.worst_rank.getDisplayValue(),
+			'avg_rank' : pp.player.avg_rank.getDisplayValue(),
+			'bye' : pp.player.team.bye_week.getDisplayValue()
+		};
+		data.playersBye.push(show_player_array);
+
+	}
+}
+
+function showPlayersInPosition() {
+	data.playersPosition=[];
+
+	var pp = new GlideRecord('x_snc_fantasy_draft_pick');
+	pp.addQuery('draft.number', data.draftNumber);
+	pp.addQuery('owner', '40938e707be56a0077b1ade93f4d4d28');
+	if (input.showPositions == 'QB') {
+		pp.addEncodedQuery('player.positionINQB')
+	} else if (input.showPositions == 'RB') {
+		pp.addEncodedQuery('player.positionINRB')
+	} else if (input.showPositions == 'DEF') {
+		pp.addEncodedQuery('player.positionINDEF')
+	} else if (input.showPositions == 'WR') {
+		pp.addEncodedQuery('player.positionINWR')
+	} else if (input.showPositions == 'KICK') {
+		pp.addEncodedQuery('player.positionINK')
+	} else if (input.showPositions == 'TE') {
+		pp.addEncodedQuery('player.positionINTE,WR')
+	}
+	pp.query();
+	while (pp.next()) {
+		var show_player_array = {
+			'name' : pp.getDisplayValue('player'),
+			'position' : pp.player.position.getDisplayValue(),
+			'team' : pp.player.team.name.getDisplayValue(),
+			'logo' : pp.player.team.logo.getDisplayValue(),
+			'adp' : pp.player.adp.getDisplayValue(),
+			'rank' : pp.player.rank.getDisplayValue(),
+			'best_rank' : pp.player.best_rank.getDisplayValue(),
+			'worst_rank' : pp.player.worst_rank.getDisplayValue(),
+			'avg_rank' : pp.player.avg_rank.getDisplayValue(),
+			'bye' : pp.player.team.bye_week.getDisplayValue()
+		};
+		data.playersPosition.push(show_player_array);
+
+	}
+}
+
+function loadPlayers() {
+	if (data.draftNumber == undefined || data.draftNumber == null||data.draftNumber == false) {
+		data.draftNumber = false;
+	}
+	data.players = [];
+	//finds all the players in the current draft and returns them to the players array
+	var p = new GlideRecord('x_snc_fantasy_draft_pick');
+	p.addQuery('draft.number', data.draftNumber);
+	p.addQuery('owner', '');
+	p.addEncodedQuery('player.rank<40^ORplayer.positionINDST,K');
+	p.query();
+	while (p.next()) {
+		var player_array = {
+			'name' : p.getDisplayValue('player'),
+			'position' : p.player.position.getDisplayValue(),
+			'team' : p.player.team.name.getDisplayValue(),
+			'logo' : p.player.team.logo.getDisplayValue(),
+			'adp' : p.player.adp.getDisplayValue(),
+			'rank' : p.player.rank.getDisplayValue(),
+			'best_rank' : p.player.best_rank.getDisplayValue(),
+			'worst_rank' : p.player.worst_rank.getDisplayValue(),
+			'avg_rank' : p.player.avg_rank.getDisplayValue(),
+			'bye' : p.player.team.bye_week.getDisplayValue()
+		};
+
+		player_array.adp = parseInt(player_array.adp);
+		player_array.avg_rank = parseInt(player_array.avg_rank);
+		//player_array.tier_color = (255-(20* Math.ceil((player_array.adp / 12))));
+		player_array.tier=Math.ceil((player_array.adp / 12));
+
+
+		var checkPosition = new GlideRecord('x_snc_fantasy_draft_pick');
+		checkPosition.addQuery('draft.number', data.draftNumber);
+		checkPosition.addQuery('owner.owner_name', 'Alex Steinwachs')
+		checkPosition.addQuery('player.position', player_array.position)
+		checkPosition.query();
+		player_array.sum_position = checkPosition.getRowCount();
+
+
+		var checkBye = new GlideRecord('x_snc_fantasy_draft_pick');
+		checkBye.addQuery('draft.number', data.draftNumber);
+		checkBye.addQuery('owner.owner_name', 'Alex Steinwachs')
+		checkBye.addQuery('player.team.bye_week', player_array.bye)
+		checkBye.query();
+		player_array.sum_bye = checkBye.getRowCount();
+
+		if (player_array.position == 'K') {
+			player_array.position = 'KICK';
+		}
+		if (player_array.position == 'TE') {
+			player_array.position = 'WR/TE';
+		}		
+		data.players.push(player_array);
+	}
+}
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>alex</sys_created_by>
+        <sys_created_on>2016-11-08 00:51:03</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>cdc22a446f472600a3d55f421c3ee4b5</sys_id>
+        <sys_mod_count>239</sys_mod_count>
+        <sys_name>FF Start Draft</sys_name>
+        <sys_package display_value="Fantasy Football Draft Picker" source="x_snc_fantasy">a8bcca207b616a00a984804b5e4d4ddf</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Fantasy Football Draft Picker">a8bcca207b616a00a984804b5e4d4ddf</sys_scope>
+        <sys_update_name>sp_widget_cdc22a446f472600a3d55f421c3ee4b5</sys_update_name>
+        <sys_updated_by>alex</sys_updated_by>
+        <sys_updated_on>2016-11-09 04:49:01</sys_updated_on>
+        <template><![CDATA[
+<div ng-show="data.draftNumber && data.draftAction=='Start'">
+  <div class="container-fluid">  
+    <div class="col-xs-5"><input type="search" class="form-control" ng-model="playerFilter" placeholder="filter players..." /></div>
+    <div class="col-xs-5"><form>
+      <select name="repeatSelect" id="repeatSelect" ng-model="data.selectedOwner" ng-change="newOwner(data.selectedOwner)">
+        <option ng-repeat="owner in data.owners" value={{owner.sys_id}}>{{owner.owner_name}}</option>
+      </select></form>
+    </div>
+    <div class="col-xs-2"><a ng-click="c.clearDraft()">{{data.draftNumber}}</a></div>
+
+  </div>
+  <div class="container-fluid" >
+    <div class="row">
+      <div class="col-xs-2"><strong>${ADP}</strong> (${Tier})<p><span class="text-success">B</span>/<span class="text-info">${Avg}</span>/<span class="text-danger">${W}</span></div> 
+      <div class="col-xs-2">${Name}</div>
+      <div class="col-xs-2">${Position} (${Own})</div>
+      <div class="col-xs-1">${Bye} (${Own})</div>
+      <div class="col-xs-2">${Team}</div>
+      <div class="col-xs-3">${Draft}</div>
+    </div>
+  </div>
+  <div class="container-fluid" >
+    <div class="row" ng-repeat="players in data.players| orderBy: 'adp'|filter:playerFilter">
+      <div class="col-xs-2"><strong>{{players.adp}}</strong> ({{players.tier}})<p><span class="text-success">{{players.best_rank}}</span>/<span class="text-info">{{players.avg_rank}}</span>/<span class="text-danger">{{players.worst_rank}}</span></div> 
+      <div class="col-xs-2">{{players.name}}</div>
+      <div class="col-xs-2"> <a ng-click="c.showPositions(players.position,players.name)">{{players.position}} ({{players.sum_position}})</a></div>
+      <div class="col-xs-1"><a ng-click="c.showBye(players.bye,players.name)">{{players.bye}} ({{players.sum_bye}})</a></div>
+      <div class="col-xs-2"><img class="img-responsive" ng-src="{{players.logo}}" /></div>
+      <div class="col-xs-3"><button ng-click="c.draftPlayer(players.name,data.draftNumber)" class="btn btn-success btn-block">${Draft}</button></div>
+      <div ng-show="c.data.showPositionsList&&c.data.showPositionsName==players.name" class="container-fluid col-xs-12">
+        <div class="row" style="background-color:#d3d3d3" ng-repeat="playersp in data.playersPosition| orderBy: 'adp'">
+          <div class="col-xs-2"><strong>{{playersp.adp}}</strong> <p><span class="text-success">{{playersp.best_rank}}</span>/<span class="text-info">{{playersp.avg_rank}}</span>/<span class="text-danger">{{playersp.worst_rank}}</span></div> 
+          <div class="col-xs-2">{{playersp.name}}</div>
+          <div class="col-xs-2">{{playersp.position}}</div>
+          <div class="col-xs-1">{{playersp.bye}}</div>
+          <div class="col-xs-2"><img class="img-responsive" ng-src="{{playersp.logo}}" /></div>
+          <div class="col-xs-3"><button ng-click="c.returnPlayer(playersp.name)" class="btn btn-danger btn-block">${Return}</button></div>
+        </div>
+      </div>
+      <div ng-show="c.data.showByeList&&c.data.showByeName==players.name" class="container-fluid col-xs-12">
+        <div class="row" style="background-color:#ffcccc" ng-repeat="playersb in data.playersBye| orderBy: 'adp'">
+          <div class="col-xs-2"><strong>{{playersb.adp}}</strong> <p><span class="text-success">{{playersb.best_rank}}</span>/<span class="text-info">{{playersb.avg_rank}}</span>/<span class="text-danger">{{playersb.worst_rank}}</span></div> 
+          <div class="col-xs-2">{{playersb.name}}</div>
+          <div class="col-xs-2">{{playersb.position}}</div>
+          <div class="col-xs-1">{{playersb.bye}}</div>
+          <div class="col-xs-2"><img class="img-responsive" ng-src="{{playersb.logo}}" /></div>
+          <div class="col-xs-3"><button ng-click="c.returnPlayer(playersb.name)" class="btn btn-danger btn-block">${Return}</button></div>
+        </div>
+      </div>
+
+    </div>
+  </div> 
+
+</div>
+]]></template>
+    </sp_widget>
+</record_update>

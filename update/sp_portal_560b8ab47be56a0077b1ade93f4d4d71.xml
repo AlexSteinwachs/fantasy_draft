@@ -3,7 +3,7 @@
     <sp_portal action="INSERT_OR_UPDATE">
         <css_variables/>
         <default>false</default>
-        <homepage display_value="ff_index">c50426707b296a0077b1ade93f4d4dbc</homepage>
+        <homepage display_value="ff_draft_2">f40266446f472600a3d55f421c3ee4ed</homepage>
         <icon/>
         <kb_knowledge_base/>
         <kb_knowledge_page/>
@@ -21,7 +21,7 @@
         <sys_created_on>2016-08-27 17:28:56</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>560b8ab47be56a0077b1ade93f4d4d71</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Fantasy Football Draft</sys_name>
         <sys_package display_value="Fantasy Football Draft Picker" source="x_snc_fantasy">a8bcca207b616a00a984804b5e4d4ddf</sys_package>
         <sys_policy/>
@@ -29,7 +29,7 @@
         <sys_scope display_value="Fantasy Football Draft Picker">a8bcca207b616a00a984804b5e4d4ddf</sys_scope>
         <sys_update_name>sp_portal_560b8ab47be56a0077b1ade93f4d4d71</sys_update_name>
         <sys_updated_by>alex</sys_updated_by>
-        <sys_updated_on>2016-08-28 08:57:07</sys_updated_on>
+        <sys_updated_on>2016-11-09 04:27:54</sys_updated_on>
         <theme display_value="Stock">79315153cb33310000f8d856634c9c4b</theme>
         <title>Fantasy Football Draft</title>
         <url_suffix>ff</url_suffix>

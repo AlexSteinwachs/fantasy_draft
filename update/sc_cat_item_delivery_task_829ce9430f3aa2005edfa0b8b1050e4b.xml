@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sc_cat_item_delivery_task">
+    <sc_cat_item_delivery_task action="INSERT_OR_UPDATE">
+        <assigned_to/>
+        <condition/>
+        <condition_script/>
+        <delivery_plan display_value="Datalink Change Request">e27ca9430f3aa2005edfa0b8b1050e37</delivery_plan>
+        <delivery_time/>
+        <generation_script/>
+        <group display_value="Hardware" name="Hardware">8a5055c9c61122780043563ef53438e3</group>
+        <instructions>-Step 1&#13;
+-Step 2&#13;
+-Step 3</instructions>
+        <name>install</name>
+        <order>100</order>
+        <short_description>install XYZ</short_description>
+        <sla/>
+        <sys_class_name>sc_cat_item_delivery_task</sys_class_name>
+        <sys_created_by>alex</sys_created_by>
+        <sys_created_on>2016-11-04 18:21:25</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>829ce9430f3aa2005edfa0b8b1050e4b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>install</sys_name>
+        <sys_package display_value="Fantasy Football Draft Picker" source="x_snc_fantasy">a8bcca207b616a00a984804b5e4d4ddf</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Fantasy Football Draft Picker">a8bcca207b616a00a984804b5e4d4ddf</sys_scope>
+        <sys_update_name>sc_cat_item_delivery_task_829ce9430f3aa2005edfa0b8b1050e4b</sys_update_name>
+        <sys_updated_by>alex</sys_updated_by>
+        <sys_updated_on>2016-11-04 18:21:25</sys_updated_on>
+        <work_notes>internal steps here</work_notes>
+    </sc_cat_item_delivery_task>
+</record_update>

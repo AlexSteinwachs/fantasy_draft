@@ -88,11 +88,11 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>alex</sys_created_by>
-            <sys_created_on>2016-08-28 05:36:34</sys_created_on>
+            <sys_created_on>2016-11-08 03:34:41</sys_created_on>
             <sys_customer_update>true</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>a9a13ccd7b2d6a0077b1ade93f4d4ddb</sys_id>
+            <sys_id>9e3807446f872600a3d55f421c3ee428</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>sp_widget</sys_name>
             <sys_package display_value="Fantasy Football Draft Picker" source="x_snc_fantasy">a8bcca207b616a00a984804b5e4d4ddf</sys_package>
@@ -101,7 +101,7 @@
             <sys_scope display_value="Fantasy Football Draft Picker">a8bcca207b616a00a984804b5e4d4ddf</sys_scope>
             <sys_update_name>sys_ui_list_sp_widget_null</sys_update_name>
             <sys_updated_by>alex</sys_updated_by>
-            <sys_updated_on>2016-08-28 05:36:34</sys_updated_on>
+            <sys_updated_on>2016-11-08 03:34:41</sys_updated_on>
             <sys_user display_value="Alex Steinwachs">ada27e2b7b451600a984804b5e4d4dda</sys_user>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

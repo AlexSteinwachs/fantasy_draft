@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>write</operation>
+        <source_scope display_value="Fantasy Football Draft Picker">a8bcca207b616a00a984804b5e4d4ddf</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>alex</sys_created_by>
+        <sys_created_on>2016-10-28 14:53:37</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>982a74f00ff22a005edfa0b8b1050eed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>v_user_session</sys_name>
+        <sys_package display_value="Fantasy Football Draft Picker" source="x_snc_fantasy">a8bcca207b616a00a984804b5e4d4ddf</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Fantasy Football Draft Picker">a8bcca207b616a00a984804b5e4d4ddf</sys_scope>
+        <sys_update_name>sys_scope_privilege_982a74f00ff22a005edfa0b8b1050eed</sys_update_name>
+        <sys_updated_by>alex</sys_updated_by>
+        <sys_updated_on>2016-10-28 14:53:37</sys_updated_on>
+        <target_name>v_user_session</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>sys_db_object</target_type>
+    </sys_scope_privilege>
+</record_update>
